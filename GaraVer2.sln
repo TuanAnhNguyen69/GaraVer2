@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_UI", "GaraVer2\Gara_UI.csproj", "{0265FFF2-D5AD-4FDF-AC60-AABED9C17963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_Data", "Gara_Data\Gara_Data.csproj", "{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_Function", "Gara_Function\Gara_Function.csproj", "{CAD5140D-097E-4C01-9E6E-099F7515BBA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0265FFF2-D5AD-4FDF-AC60-AABED9C17963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0265FFF2-D5AD-4FDF-AC60-AABED9C17963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0265FFF2-D5AD-4FDF-AC60-AABED9C17963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0265FFF2-D5AD-4FDF-AC60-AABED9C17963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD5140D-097E-4C01-9E6E-099F7515BBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD5140D-097E-4C01-9E6E-099F7515BBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD5140D-097E-4C01-9E6E-099F7515BBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD5140D-097E-4C01-9E6E-099F7515BBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

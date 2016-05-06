@@ -1,0 +1,10 @@
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\bin\Debug\GaraVer2.exe.config
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\bin\Debug\GaraVer2.exe
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\bin\Debug\GaraVer2.pdb
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\Gara_UI.csprojResolveAssemblyReference.cache
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.Properties.Resources.resources
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\Gara_UI.csproj.GenerateResource.Cache
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.exe
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.pdb
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.MainForm.resources
+c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.exe.licenses
