@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.navBarControl_Task = new DevExpress.XtraNavBar.NavBarControl();
-            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup_CarReceiving = new DevExpress.XtraNavBar.NavBarGroup();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.radio_carBrand = new System.Windows.Forms.RadioButton();
             this.radio_carplateNumber = new System.Windows.Forms.RadioButton();
@@ -55,6 +55,13 @@
             this.Button_Infor = new DevExpress.XtraEditors.SimpleButton();
             this.Button_Setting = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.navBarGroup_Receipt = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup_Report = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem_CarReceive = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem_Receipt_Fixing = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem_Report_Sale = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem_Receipt_Money = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem_Report_Inventory = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl_Task)).BeginInit();
@@ -86,10 +93,18 @@
             // 
             // navBarControl_Task
             // 
-            this.navBarControl_Task.ActiveGroup = this.navBarGroup1;
+            this.navBarControl_Task.ActiveGroup = this.navBarGroup_CarReceiving;
             this.navBarControl_Task.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl_Task.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup1});
+            this.navBarGroup_CarReceiving,
+            this.navBarGroup_Receipt,
+            this.navBarGroup_Report});
+            this.navBarControl_Task.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.navBarItem_CarReceive,
+            this.navBarItem_Receipt_Fixing,
+            this.navBarItem_Report_Sale,
+            this.navBarItem_Receipt_Money,
+            this.navBarItem_Report_Inventory});
             this.navBarControl_Task.Location = new System.Drawing.Point(0, 142);
             this.navBarControl_Task.Name = "navBarControl_Task";
             this.navBarControl_Task.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
@@ -97,11 +112,13 @@
             this.navBarControl_Task.TabIndex = 1;
             this.navBarControl_Task.Text = "navBarControl1";
             // 
-            // navBarGroup1
+            // navBarGroup_CarReceiving
             // 
-            this.navBarGroup1.Caption = "navBarGroup1";
-            this.navBarGroup1.Expanded = true;
-            this.navBarGroup1.Name = "navBarGroup1";
+            this.navBarGroup_CarReceiving.Caption = "Tiếp nhận xe";
+            this.navBarGroup_CarReceiving.Expanded = true;
+            this.navBarGroup_CarReceiving.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_CarReceive)});
+            this.navBarGroup_CarReceiving.Name = "navBarGroup_CarReceiving";
             // 
             // panelControl2
             // 
@@ -332,6 +349,47 @@
             this.panelControl5.Size = new System.Drawing.Size(424, 138);
             this.panelControl5.TabIndex = 2;
             // 
+            // navBarGroup_Receipt
+            // 
+            this.navBarGroup_Receipt.Caption = "Hóa đơn kinh doanh";
+            this.navBarGroup_Receipt.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_Receipt_Fixing),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_Receipt_Money)});
+            this.navBarGroup_Receipt.Name = "navBarGroup_Receipt";
+            // 
+            // navBarGroup_Report
+            // 
+            this.navBarGroup_Report.Caption = "Báo cáo doanh số";
+            this.navBarGroup_Report.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_Report_Sale),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem_Report_Inventory)});
+            this.navBarGroup_Report.Name = "navBarGroup_Report";
+            // 
+            // navBarItem_CarReceive
+            // 
+            this.navBarItem_CarReceive.Caption = "Tiếp nhận xe";
+            this.navBarItem_CarReceive.Name = "navBarItem_CarReceive";
+            // 
+            // navBarItem_Receipt_Fixing
+            // 
+            this.navBarItem_Receipt_Fixing.Caption = "Phiếu sửa chữa";
+            this.navBarItem_Receipt_Fixing.Name = "navBarItem_Receipt_Fixing";
+            // 
+            // navBarItem_Report_Sale
+            // 
+            this.navBarItem_Report_Sale.Caption = "Báo cáo doanh số";
+            this.navBarItem_Report_Sale.Name = "navBarItem_Report_Sale";
+            // 
+            // navBarItem_Receipt_Money
+            // 
+            this.navBarItem_Receipt_Money.Caption = "Phiếu thu tiền";
+            this.navBarItem_Receipt_Money.Name = "navBarItem_Receipt_Money";
+            // 
+            // navBarItem_Report_Inventory
+            // 
+            this.navBarItem_Report_Inventory.Caption = "Báo cáo tồn";
+            this.navBarItem_Report_Inventory.Name = "navBarItem_Report_Inventory";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,7 +426,7 @@
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraNavBar.NavBarControl navBarControl_Task;
-        private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup_CarReceiving;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.SimpleButton Button_Login;
@@ -392,5 +450,12 @@
         private DevExpress.XtraEditors.DateEdit date_Search;
         private DevExpress.XtraEditors.DropDownButton dropDown_CarBrand;
         private DevExpress.XtraEditors.DropDownButton dropDown_CarPart;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup_Report;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem_Report_Sale;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem_CarReceive;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup_Receipt;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem_Receipt_Fixing;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem_Receipt_Money;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem_Report_Inventory;
     }
 }
