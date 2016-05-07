@@ -10,3 +10,4 @@ c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug
 c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.exe.licenses
 c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.Abstract.resources
 c:\users\razor\documents\visual studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.frmCarReceive.resources
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Debug\GaraVer2.frmSearchResult.resources
