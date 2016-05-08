@@ -39,7 +39,7 @@
             this.textEdit_Password = new DevExpress.XtraEditors.TextEdit();
             this.panelControl_SettingSection = new DevExpress.XtraEditors.PanelControl();
             this.Button_Infor = new DevExpress.XtraEditors.SimpleButton();
-            this.Button_Setting = new DevExpress.XtraEditors.SimpleButton();
+            this.Button_Manage = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl_SearchSection = new DevExpress.XtraEditors.PanelControl();
             this.radio_carBrand = new System.Windows.Forms.RadioButton();
             this.Button_Search = new DevExpress.XtraEditors.SimpleButton();
@@ -162,7 +162,7 @@
             // 
             this.panelControl_SettingSection.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.panelControl_SettingSection.Controls.Add(this.Button_Infor);
-            this.panelControl_SettingSection.Controls.Add(this.Button_Setting);
+            this.panelControl_SettingSection.Controls.Add(this.Button_Manage);
             this.panelControl_SettingSection.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelControl_SettingSection.Location = new System.Drawing.Point(1135, 2);
             this.panelControl_SettingSection.Name = "panelControl_SettingSection";
@@ -179,15 +179,16 @@
             this.Button_Infor.TabIndex = 16;
             this.Button_Infor.Text = "Thông tin";
             // 
-            // Button_Setting
+            // Button_Manage
             // 
-            this.Button_Setting.Image = ((System.Drawing.Image)(resources.GetObject("Button_Setting.Image")));
-            this.Button_Setting.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.Button_Setting.Location = new System.Drawing.Point(21, 15);
-            this.Button_Setting.Name = "Button_Setting";
-            this.Button_Setting.Size = new System.Drawing.Size(83, 95);
-            this.Button_Setting.TabIndex = 15;
-            this.Button_Setting.Text = "Thiết lập";
+            this.Button_Manage.AllowDrop = true;
+            this.Button_Manage.Image = ((System.Drawing.Image)(resources.GetObject("Button_Manage.Image")));
+            this.Button_Manage.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.Button_Manage.Location = new System.Drawing.Point(21, 15);
+            this.Button_Manage.Name = "Button_Manage";
+            this.Button_Manage.Size = new System.Drawing.Size(83, 95);
+            this.Button_Manage.TabIndex = 15;
+            this.Button_Manage.Text = "Quản lý";
             // 
             // panelControl_SearchSection
             // 
@@ -360,11 +361,13 @@
             // 
             this.navBarItem_Receipt_Fixing.Caption = "Phiếu sửa chữa";
             this.navBarItem_Receipt_Fixing.Name = "navBarItem_Receipt_Fixing";
+            this.navBarItem_Receipt_Fixing.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_Receipt_Fixing_LinkClicked);
             // 
             // navBarItem_Receipt_Money
             // 
             this.navBarItem_Receipt_Money.Caption = "Phiếu thu tiền";
             this.navBarItem_Receipt_Money.Name = "navBarItem_Receipt_Money";
+            this.navBarItem_Receipt_Money.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_Receipt_Money_LinkClicked);
             // 
             // navBarGroup_Report
             // 
@@ -378,11 +381,13 @@
             // 
             this.navBarItem_Report_Sale.Caption = "Báo cáo doanh số";
             this.navBarItem_Report_Sale.Name = "navBarItem_Report_Sale";
+            this.navBarItem_Report_Sale.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_Report_Sale_LinkClicked);
             // 
             // navBarItem_Report_Inventory
             // 
             this.navBarItem_Report_Inventory.Caption = "Báo cáo tồn";
             this.navBarItem_Report_Inventory.Name = "navBarItem_Report_Inventory";
+            this.navBarItem_Report_Inventory.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem_Report_Inventory_LinkClicked);
             // 
             // panelControl_WorkSection
             // 
@@ -440,7 +445,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit_Password;
         private DevExpress.XtraEditors.PanelControl panelControl_SettingSection;
         private DevExpress.XtraEditors.SimpleButton Button_Infor;
-        private DevExpress.XtraEditors.SimpleButton Button_Setting;
+        private DevExpress.XtraEditors.SimpleButton Button_Manage;
         private DevExpress.XtraEditors.PanelControl panelControl_SearchSection;
         private System.Windows.Forms.RadioButton radio_carBrand;
         private DevExpress.XtraEditors.SimpleButton Button_Search;

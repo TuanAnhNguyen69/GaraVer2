@@ -47,9 +47,9 @@
             this.panelControl2.Controls.Add(this.panelControl4);
             this.panelControl2.Controls.Add(this.label2);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 226);
+            this.panelControl2.Location = new System.Drawing.Point(0, 217);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(284, 35);
+            this.panelControl2.Size = new System.Drawing.Size(284, 44);
             this.panelControl2.TabIndex = 1;
             // 
             // panelControl4
@@ -60,13 +60,13 @@
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelControl4.Location = new System.Drawing.Point(169, 2);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(113, 31);
+            this.panelControl4.Size = new System.Drawing.Size(113, 40);
             this.panelControl4.TabIndex = 0;
             // 
             // Button_Cancel
             // 
             this.Button_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("Button_Cancel.Image")));
-            this.Button_Cancel.Location = new System.Drawing.Point(27, 2);
+            this.Button_Cancel.Location = new System.Drawing.Point(26, 3);
             this.Button_Cancel.Name = "Button_Cancel";
             this.Button_Cancel.Size = new System.Drawing.Size(85, 34);
             this.Button_Cancel.TabIndex = 0;
@@ -79,7 +79,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 31);
+            this.label3.Size = new System.Drawing.Size(113, 40);
             this.label3.TabIndex = 1;
             // 
             // label2
@@ -88,7 +88,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(2, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 31);
+            this.label2.Size = new System.Drawing.Size(280, 40);
             this.label2.TabIndex = 1;
             // 
             // groupControl1
@@ -96,7 +96,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(284, 226);
+            this.groupControl1.Size = new System.Drawing.Size(284, 217);
             this.groupControl1.TabIndex = 2;
             // 
             // Abstract

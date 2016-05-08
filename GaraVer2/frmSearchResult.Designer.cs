@@ -71,28 +71,33 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(0, 521);
-            this.panelControl2.Size = new System.Drawing.Size(1096, 35);
+            this.panelControl2.Location = new System.Drawing.Point(0, 511);
+            this.panelControl2.Size = new System.Drawing.Size(1096, 45);
             // 
             // panelControl4
             // 
             this.panelControl4.Location = new System.Drawing.Point(981, 2);
+            this.panelControl4.Size = new System.Drawing.Size(113, 41);
+            // 
+            // label3
+            // 
+            this.label3.Size = new System.Drawing.Size(113, 41);
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(1092, 31);
+            this.label2.Size = new System.Drawing.Size(1092, 41);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(1096, 521);
+            this.groupControl1.Size = new System.Drawing.Size(1096, 511);
             this.groupControl1.Text = "Kết quả tìm kiếm";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.43956F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.56044F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.98169F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.01832F));
             this.tableLayoutPanel1.Controls.Add(this.groupPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -100,7 +105,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1092, 498);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1092, 488);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupPanel2
@@ -109,9 +114,9 @@
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.tableTiepNhanXe);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupPanel2.Location = new System.Drawing.Point(389, 3);
+            this.groupPanel2.Location = new System.Drawing.Point(385, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(700, 492);
+            this.groupPanel2.Size = new System.Drawing.Size(704, 482);
             // 
             // 
             // 
@@ -168,7 +173,7 @@
             this.tableTiepNhanXe.Location = new System.Drawing.Point(0, 0);
             this.tableTiepNhanXe.MaximumSize = new System.Drawing.Size(1000, 1000);
             this.tableTiepNhanXe.Name = "tableTiepNhanXe";
-            this.tableTiepNhanXe.Size = new System.Drawing.Size(694, 470);
+            this.tableTiepNhanXe.Size = new System.Drawing.Size(698, 460);
             this.tableTiepNhanXe.TabIndex = 1;
             // 
             // BienSo
@@ -250,7 +255,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(380, 492);
+            this.groupPanel1.Size = new System.Drawing.Size(376, 482);
             // 
             // 
             // 
@@ -290,7 +295,7 @@
             this.btnCapNhat.Appearance.Options.UseFont = true;
             this.btnCapNhat.Enabled = false;
             this.btnCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.Image")));
-            this.btnCapNhat.Location = new System.Drawing.Point(226, 369);
+            this.btnCapNhat.Location = new System.Drawing.Point(225, 379);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(119, 38);
             this.btnCapNhat.TabIndex = 32;
@@ -305,7 +310,7 @@
             this.labelControl7.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl7.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl7.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl7.Location = new System.Drawing.Point(11, 99);
+            this.labelControl7.Location = new System.Drawing.Point(10, 169);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(101, 18);
             this.labelControl7.TabIndex = 16;
@@ -320,7 +325,7 @@
             this.txtEmail.Border.Class = "TextBoxBorder";
             this.txtEmail.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(123, 246);
+            this.txtEmail.Location = new System.Drawing.Point(122, 316);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PreventEnterBeep = true;
             this.txtEmail.Size = new System.Drawing.Size(222, 24);
@@ -335,7 +340,7 @@
             this.labelControl6.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl6.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl6.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl6.Location = new System.Drawing.Point(11, 248);
+            this.labelControl6.Location = new System.Drawing.Point(10, 318);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(41, 18);
             this.labelControl6.TabIndex = 14;
@@ -350,7 +355,7 @@
             this.txtDienThoai.Border.Class = "TextBoxBorder";
             this.txtDienThoai.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDienThoai.Location = new System.Drawing.Point(123, 194);
+            this.txtDienThoai.Location = new System.Drawing.Point(122, 264);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.PreventEnterBeep = true;
             this.txtDienThoai.Size = new System.Drawing.Size(222, 24);
@@ -365,7 +370,7 @@
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl5.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl5.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl5.Location = new System.Drawing.Point(11, 196);
+            this.labelControl5.Location = new System.Drawing.Point(10, 266);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(70, 18);
             this.labelControl5.TabIndex = 12;
@@ -380,7 +385,7 @@
             this.txtDiaChi.Border.Class = "TextBoxBorder";
             this.txtDiaChi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(123, 53);
+            this.txtDiaChi.Location = new System.Drawing.Point(122, 123);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PreventEnterBeep = true;
             this.txtDiaChi.Size = new System.Drawing.Size(222, 24);
@@ -395,7 +400,7 @@
             this.txtTenChuXe.Border.Class = "TextBoxBorder";
             this.txtTenChuXe.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTenChuXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenChuXe.Location = new System.Drawing.Point(123, 5);
+            this.txtTenChuXe.Location = new System.Drawing.Point(122, 75);
             this.txtTenChuXe.Name = "txtTenChuXe";
             this.txtTenChuXe.PreventEnterBeep = true;
             this.txtTenChuXe.Size = new System.Drawing.Size(222, 24);
@@ -410,7 +415,7 @@
             this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl3.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl3.Location = new System.Drawing.Point(11, 55);
+            this.labelControl3.Location = new System.Drawing.Point(10, 125);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(49, 18);
             this.labelControl3.TabIndex = 9;
@@ -425,7 +430,7 @@
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl2.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl2.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl2.Location = new System.Drawing.Point(11, 148);
+            this.labelControl2.Location = new System.Drawing.Point(10, 218);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(53, 18);
             this.labelControl2.TabIndex = 8;
@@ -440,7 +445,7 @@
             this.labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl4.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl4.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl4.Location = new System.Drawing.Point(11, 7);
+            this.labelControl4.Location = new System.Drawing.Point(10, 77);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(76, 18);
             this.labelControl4.TabIndex = 7;
@@ -451,7 +456,7 @@
             this.cbHieuXe.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cbHieuXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHieuXe.FormattingEnabled = true;
-            this.cbHieuXe.Location = new System.Drawing.Point(123, 145);
+            this.cbHieuXe.Location = new System.Drawing.Point(122, 215);
             this.cbHieuXe.Name = "cbHieuXe";
             this.cbHieuXe.Size = new System.Drawing.Size(222, 26);
             this.cbHieuXe.TabIndex = 5;
@@ -465,7 +470,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(11, -41);
+            this.labelControl1.Location = new System.Drawing.Point(10, 29);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 18);
             this.labelControl1.TabIndex = 3;
@@ -480,7 +485,7 @@
             this.txtBienSo.Border.Class = "TextBoxBorder";
             this.txtBienSo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtBienSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBienSo.Location = new System.Drawing.Point(123, -41);
+            this.txtBienSo.Location = new System.Drawing.Point(122, 29);
             this.txtBienSo.Name = "txtBienSo";
             this.txtBienSo.PreventEnterBeep = true;
             this.txtBienSo.Size = new System.Drawing.Size(222, 24);
@@ -491,7 +496,7 @@
             this.dateNgayTiepNhan.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateNgayTiepNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayTiepNhan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayTiepNhan.Location = new System.Drawing.Point(123, 99);
+            this.dateNgayTiepNhan.Location = new System.Drawing.Point(122, 169);
             this.dateNgayTiepNhan.Name = "dateNgayTiepNhan";
             this.dateNgayTiepNhan.Size = new System.Drawing.Size(222, 24);
             this.dateNgayTiepNhan.TabIndex = 0;

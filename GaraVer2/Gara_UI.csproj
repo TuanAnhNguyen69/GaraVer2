@@ -39,15 +39,44 @@
     <Reference Include="DevComponents.Instrumentation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.SuperGrid.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.TreeGX, Version=11.0.0.0, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Extensions, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +100,30 @@
     <Compile Include="frmCarReceive.Designer.cs">
       <DependentUpon>frmCarReceive.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFixingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixingReceipt.Designer.cs">
+      <DependentUpon>frmFixingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryReport.Designer.cs">
+      <DependentUpon>frmInventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoneyReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneyReceipt.Designer.cs">
+      <DependentUpon>frmMoneyReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleReport.Designer.cs">
+      <DependentUpon>frmSaleReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSearchResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +143,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarReceive.resx">
       <DependentUpon>frmCarReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixingReceipt.resx">
+      <DependentUpon>frmFixingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryReport.resx">
+      <DependentUpon>frmInventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneyReceipt.resx">
+      <DependentUpon>frmMoneyReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaleReport.resx">
+      <DependentUpon>frmSaleReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchResult.resx">
       <DependentUpon>frmSearchResult.cs</DependentUpon>
