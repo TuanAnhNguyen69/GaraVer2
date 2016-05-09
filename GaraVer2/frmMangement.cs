@@ -16,5 +16,6 @@ namespace GaraVer2
         {
             InitializeComponent();
         }
+
     }
 }

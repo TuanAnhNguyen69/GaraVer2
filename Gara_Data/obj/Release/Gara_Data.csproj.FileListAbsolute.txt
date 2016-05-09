@@ -1,0 +1,7 @@
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\obj\Release\Gara_Data.Properties.Resources.resources
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\obj\Release\Gara_Data.csproj.GenerateResource.Cache
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\bin\Release\Gara_Data.exe.config
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\bin\Release\Gara_Data.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\bin\Release\Gara_Data.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\obj\Release\Gara_Data.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Data\obj\Release\Gara_Data.pdb

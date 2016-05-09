@@ -189,6 +189,7 @@
             this.Button_Manage.Size = new System.Drawing.Size(83, 95);
             this.Button_Manage.TabIndex = 15;
             this.Button_Manage.Text = "Quản lý";
+            this.Button_Manage.Click += new System.EventHandler(this.Button_Manage_Click);
             // 
             // panelControl_SearchSection
             // 

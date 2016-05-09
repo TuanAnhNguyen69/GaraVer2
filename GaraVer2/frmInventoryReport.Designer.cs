@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventoryReport));
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventoryReport));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.rpvBaoCaoTon = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnLapBaoCao = new DevExpress.XtraEditors.SimpleButton();
             this.cbThang = new System.Windows.Forms.ComboBox();
             this.txtNam = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.rpvBaoCaoTon = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -46,27 +46,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl2
             // 
             this.panelControl2.Location = new System.Drawing.Point(0, 509);
-            this.panelControl2.Size = new System.Drawing.Size(1096, 44);
+            this.panelControl2.Size = new System.Drawing.Size(1121, 44);
             // 
             // panelControl4
             // 
-            this.panelControl4.Location = new System.Drawing.Point(981, 2);
+            this.panelControl4.Location = new System.Drawing.Point(1006, 2);
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(1092, 40);
+            this.label2.Size = new System.Drawing.Size(1117, 40);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(1096, 509);
+            this.groupControl1.Size = new System.Drawing.Size(1121, 509);
             this.groupControl1.Text = "Báo cáo tồn kho";
             // 
             // tableLayoutPanel1
@@ -81,8 +81,61 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1092, 486);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1117, 486);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // groupPanel2
+            // 
+            this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.rpvBaoCaoTon);
+            this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupPanel2.Location = new System.Drawing.Point(348, 3);
+            this.groupPanel2.Name = "groupPanel2";
+            this.groupPanel2.Size = new System.Drawing.Size(766, 480);
+            // 
+            // 
+            // 
+            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel2.Style.BackColorGradientAngle = 90;
+            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderBottomWidth = 1;
+            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderLeftWidth = 1;
+            this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderRightWidth = 1;
+            this.groupPanel2.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderTopWidth = 1;
+            this.groupPanel2.Style.CornerDiameter = 4;
+            this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel2.TabIndex = 2;
+            this.groupPanel2.Text = "Chi tiết báo cáo tồn vật tư phụ tùng";
+            // 
+            // rpvBaoCaoTon
+            // 
+            this.rpvBaoCaoTon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rpvBaoCaoTon.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet2";
+            reportDataSource1.Value = null;
+            this.rpvBaoCaoTon.LocalReport.DataSources.Add(reportDataSource1);
+            this.rpvBaoCaoTon.LocalReport.ReportEmbeddedResource = "Gara_UI.Report2.rdlc";
+            this.rpvBaoCaoTon.Location = new System.Drawing.Point(0, 0);
+            this.rpvBaoCaoTon.Name = "rpvBaoCaoTon";
+            this.rpvBaoCaoTon.Size = new System.Drawing.Size(760, 458);
+            this.rpvBaoCaoTon.TabIndex = 0;
             // 
             // groupPanel1
             // 
@@ -98,7 +151,7 @@
             this.groupPanel1.Controls.Add(this.labelControl5);
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(332, 480);
+            this.groupPanel1.Size = new System.Drawing.Size(339, 480);
             // 
             // 
             // 
@@ -202,64 +255,11 @@
             this.labelControl5.TabIndex = 32;
             this.labelControl5.Text = "Tháng:\r\n";
             // 
-            // groupPanel2
-            // 
-            this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.rpvBaoCaoTon);
-            this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupPanel2.Location = new System.Drawing.Point(341, 3);
-            this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(748, 480);
-            // 
-            // 
-            // 
-            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel2.Style.BackColorGradientAngle = 90;
-            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderBottomWidth = 1;
-            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderLeftWidth = 1;
-            this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderRightWidth = 1;
-            this.groupPanel2.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel2.Style.BorderTopWidth = 1;
-            this.groupPanel2.Style.CornerDiameter = 4;
-            this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel2.TabIndex = 2;
-            this.groupPanel2.Text = "Chi tiết báo cáo tồn vật tư phụ tùng";
-            // 
-            // rpvBaoCaoTon
-            // 
-            this.rpvBaoCaoTon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rpvBaoCaoTon.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet2";
-            reportDataSource1.Value = null;
-            this.rpvBaoCaoTon.LocalReport.DataSources.Add(reportDataSource1);
-            this.rpvBaoCaoTon.LocalReport.ReportEmbeddedResource = "Gara_UI.Report2.rdlc";
-            this.rpvBaoCaoTon.Location = new System.Drawing.Point(0, 0);
-            this.rpvBaoCaoTon.Name = "rpvBaoCaoTon";
-            this.rpvBaoCaoTon.Size = new System.Drawing.Size(742, 458);
-            this.rpvBaoCaoTon.TabIndex = 0;
-            // 
             // frmInventoryReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 553);
+            this.ClientSize = new System.Drawing.Size(1121, 553);
             this.Name = "frmInventoryReport";
             this.Text = "frmInventoryReport";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -269,9 +269,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupPanel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
-            this.groupPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

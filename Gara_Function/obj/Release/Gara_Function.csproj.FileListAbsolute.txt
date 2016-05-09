@@ -1,0 +1,9 @@
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.csprojResolveAssemblyReference.cache
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.Properties.Resources.resources
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.csproj.GenerateResource.Cache
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.exe.licenses
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\bin\Release\Gara_Function.exe.config
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\bin\Release\Gara_Function.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\bin\Release\Gara_Function.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_Function\obj\Release\Gara_Function.pdb
