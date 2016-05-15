@@ -15,3 +15,4 @@ C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Relea
 C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Release\GaraVer2.exe.licenses
 C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Release\GaraVer2.exe
 C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Release\GaraVer2.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\GaraVer2\obj\Release\Gara_UI.csprojResolveAssemblyReference.cache

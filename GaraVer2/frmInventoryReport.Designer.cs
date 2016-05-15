@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventoryReport));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.rpvBaoCaoTon = new Microsoft.Reporting.WinForms.ReportViewer();
+
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnLapBaoCao = new DevExpress.XtraEditors.SimpleButton();
             this.cbThang = new System.Windows.Forms.ComboBox();
@@ -88,7 +88,7 @@
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.rpvBaoCaoTon);
+
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(348, 3);
             this.groupPanel2.Name = "groupPanel2";
@@ -123,19 +123,8 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 2;
             this.groupPanel2.Text = "Chi tiết báo cáo tồn vật tư phụ tùng";
-            // 
-            // rpvBaoCaoTon
-            // 
-            this.rpvBaoCaoTon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rpvBaoCaoTon.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet2";
-            reportDataSource1.Value = null;
-            this.rpvBaoCaoTon.LocalReport.DataSources.Add(reportDataSource1);
-            this.rpvBaoCaoTon.LocalReport.ReportEmbeddedResource = "Gara_UI.Report2.rdlc";
-            this.rpvBaoCaoTon.Location = new System.Drawing.Point(0, 0);
-            this.rpvBaoCaoTon.Name = "rpvBaoCaoTon";
-            this.rpvBaoCaoTon.Size = new System.Drawing.Size(760, 458);
-            this.rpvBaoCaoTon.TabIndex = 0;
+
+          
             // 
             // groupPanel1
             // 
@@ -286,6 +275,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private Microsoft.Reporting.WinForms.ReportViewer rpvBaoCaoTon;
+        
     }
 }

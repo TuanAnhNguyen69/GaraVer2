@@ -52,7 +52,7 @@
             this.cbBienSo = new System.Windows.Forms.ComboBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dateNgayThuTien = new System.Windows.Forms.DateTimePicker();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -88,7 +88,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.27106F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.72894F));
             this.tableLayoutPanel1.Controls.Add(this.groupPanel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.reportViewer1, 1, 0);
+
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 21);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -434,14 +434,6 @@
             this.dateNgayThuTien.Size = new System.Drawing.Size(138, 24);
             this.dateNgayThuTien.TabIndex = 17;
             // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(409, 3);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(680, 480);
-            this.reportViewer1.TabIndex = 2;
-            // 
             // frmMoneyReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,6 +481,5 @@
         private System.Windows.Forms.ComboBox cbBienSo;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.DateTimePicker dateNgayThuTien;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

@@ -20,7 +20,7 @@ namespace GaraVer2
         private void frmMoneyReceipt_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            
         }
     }
 }
