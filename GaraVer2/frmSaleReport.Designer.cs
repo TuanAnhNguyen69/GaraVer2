@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSaleReport));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -39,6 +40,9 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.snapControl1 = new DevExpress.Snap.SnapControl();
+            this.dataSet11 = new GaraVer2.DataSet1();
+            this.SalebindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.doanhSoTableAdapter = new GaraVer2.DataSet1TableAdapters.DoanhSoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -48,25 +52,28 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalebindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(0, 350);
-            this.panelControl2.Size = new System.Drawing.Size(979, 44);
+            this.panelControl2.Location = new System.Drawing.Point(0, -44);
+            this.panelControl2.Size = new System.Drawing.Size(0, 44);
             // 
             // panelControl4
             // 
-            this.panelControl4.Location = new System.Drawing.Point(864, 2);
+            this.panelControl4.Location = new System.Drawing.Point(-114, 2);
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(975, 40);
+            this.label2.Location = new System.Drawing.Point(1, 2);
+            this.label2.Size = new System.Drawing.Size(0, 40);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(979, 350);
+            this.groupControl1.Size = new System.Drawing.Size(0, 0);
             this.groupControl1.Text = "Báo cáo doanh số";
             // 
             // tableLayoutPanel1
@@ -77,11 +84,11 @@
             this.tableLayoutPanel1.Controls.Add(this.groupPanel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 21);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 20);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(975, 327);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(0, 0);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupPanel2
@@ -92,9 +99,9 @@
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.reportViewer1);
-            this.groupPanel2.Location = new System.Drawing.Point(308, 3);
+            this.groupPanel2.Location = new System.Drawing.Point(3, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(664, 321);
+            this.groupPanel2.Size = new System.Drawing.Size(1, 1);
             // 
             // 
             // 
@@ -131,7 +138,7 @@
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(658, 299);
+            this.reportViewer1.Size = new System.Drawing.Size(0, 8);
             this.reportViewer1.TabIndex = 0;
             // 
             // groupPanel1
@@ -148,7 +155,7 @@
             this.groupPanel1.Controls.Add(this.labelControl5);
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(299, 321);
+            this.groupPanel1.Size = new System.Drawing.Size(1, 1);
             // 
             // 
             // 
@@ -184,7 +191,7 @@
             // 
             this.btnLapBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLapBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Image")));
-            this.btnLapBaoCao.Location = new System.Drawing.Point(77, 201);
+            this.btnLapBaoCao.Location = new System.Drawing.Point(-101, 201);
             this.btnLapBaoCao.Name = "btnLapBaoCao";
             this.btnLapBaoCao.Size = new System.Drawing.Size(126, 46);
             this.btnLapBaoCao.TabIndex = 36;
@@ -208,7 +215,7 @@
             "10",
             "11",
             "12"});
-            this.cbThang.Location = new System.Drawing.Point(121, 102);
+            this.cbThang.Location = new System.Drawing.Point(-57, 102);
             this.cbThang.Name = "cbThang";
             this.cbThang.Size = new System.Drawing.Size(96, 26);
             this.cbThang.TabIndex = 35;
@@ -217,7 +224,7 @@
             // 
             this.txtNam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNam.Location = new System.Drawing.Point(121, 158);
+            this.txtNam.Location = new System.Drawing.Point(-57, 158);
             this.txtNam.Name = "txtNam";
             this.txtNam.Size = new System.Drawing.Size(96, 24);
             this.txtNam.TabIndex = 34;
@@ -231,7 +238,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(46, 160);
+            this.labelControl1.Location = new System.Drawing.Point(-132, 160);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(36, 18);
             this.labelControl1.TabIndex = 33;
@@ -246,7 +253,7 @@
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl5.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl5.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl5.Location = new System.Drawing.Point(46, 105);
+            this.labelControl5.Location = new System.Drawing.Point(-132, 105);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(45, 18);
             this.labelControl5.TabIndex = 32;
@@ -269,11 +276,25 @@
             this.snapControl1.Size = new System.Drawing.Size(517, 216);
             this.snapControl1.TabIndex = 0;
             // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // SalebindingSource1
+            // 
+            this.SalebindingSource1.DataMember = "DoanhSo";
+            this.SalebindingSource1.DataSource = this.dataSet11;
+            // 
+            // doanhSoTableAdapter
+            // 
+            this.doanhSoTableAdapter.ClearBeforeFill = true;
+            // 
             // frmSaleReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 394);
+            this.ClientSize = new System.Drawing.Size(0, 0);
             this.Name = "frmSaleReport";
             this.Text = "frmSaleReport";
             this.Load += new System.EventHandler(this.frmSaleReport_Load);
@@ -287,6 +308,8 @@
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalebindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,5 +326,8 @@
         private DevExpress.Snap.SnapControl snapControl1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private DataSet1 dataSet11;
+        private System.Windows.Forms.BindingSource SalebindingSource1;
+        private DataSet1TableAdapters.DoanhSoTableAdapter doanhSoTableAdapter;
     }
 }

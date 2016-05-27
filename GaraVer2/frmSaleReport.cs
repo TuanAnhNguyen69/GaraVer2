@@ -19,9 +19,11 @@ namespace GaraVer2
 
         private void frmSaleReport_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSet11.DoanhSo' table. You can move, or remove it, as needed.
+            this.doanhSoTableAdapter.Fill(this.dataSet11.DoanhSo);
 
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
         }
+
+      
     }
 }

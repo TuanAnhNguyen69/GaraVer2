@@ -1,0 +1,16 @@
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\bin\Debug\Gara_BUS.exe.config
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\bin\Debug\Gara_BUS.exe
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\bin\Debug\Gara_BUS.pdb
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\bin\Debug\Gara_DATA.exe
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\bin\Debug\Gara_DATA.pdb
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\obj\Debug\Gara_BUS.csprojResolveAssemblyReference.cache
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\obj\Debug\Gara_BUS.exe
+C:\Users\Razor\Desktop\Things\PM_QUANLY_GARA_OTO\PM_QUANLY_GARA_OTO\Gara_BUS\obj\Debug\Gara_BUS.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\bin\Debug\Gara_BUS.exe.config
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\obj\Debug\Gara_BUS.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\obj\Debug\Gara_BUS.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\obj\Debug\Gara_BUS.csprojResolveAssemblyReference.cache
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\bin\Debug\Gara_BUS.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\bin\Debug\Gara_BUS.pdb
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\bin\Debug\Gara_Data.exe
+C:\Users\Razor\Documents\Visual Studio 2013\Projects\GaraVer2\Gara_BUS\bin\Debug\Gara_Data.pdb

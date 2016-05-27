@@ -4,8 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B052DD96-3D67-4FE6-8CB6-650C6C78E7F2}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{8DACD77F-A62B-4086-9849-D1B79B8B12B4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gara_Data</RootNamespace>
     <AssemblyName>Gara_Data</AssemblyName>
@@ -33,41 +33,51 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connections.cs" />
+    <Compile Include="DAL\BaoCaoDoanhSoDAL.cs" />
+    <Compile Include="DAL\BaoCaoTonDAL.cs" />
+    <Compile Include="DAL\CT_BaoCaoDoanhSoDAL.cs" />
+    <Compile Include="DAL\CT_PhieuNhapVatTuPhuTungDAL.cs" />
+    <Compile Include="DAL\CT_PhieuSuaChuaDAL.cs" />
+    <Compile Include="DAL\CT_VatTuPhuTungDAL.cs" />
+    <Compile Include="DAL\HieuXeDAL.cs" />
+    <Compile Include="DAL\PhieuNhapVatTuPhuTungDAL.cs" />
+    <Compile Include="DAL\PhieuSuaChuaDAL.cs" />
+    <Compile Include="DAL\PhieuThuTienDAL.cs" />
+    <Compile Include="DAL\ThamSoDAL.cs" />
+    <Compile Include="DAL\TienCongDAL.cs" />
+    <Compile Include="DAL\VatTuPhuTungDAL.cs" />
+    <Compile Include="DAL\XeDAL.cs" />
+    <Compile Include="Info\BaoCaoDoanhSo.cs" />
+    <Compile Include="Info\BaoCaoTon.cs" />
+    <Compile Include="Info\CT_BaoCaoDoanhSo.cs" />
+    <Compile Include="Info\CT_PhieuNhapVatTuPhuTung.cs" />
+    <Compile Include="Info\CT_PhieuSuaChua.cs" />
+    <Compile Include="Info\CT_VatTuPhuTung.cs" />
+    <Compile Include="Info\HieuXe.cs" />
+    <Compile Include="Info\PhieuNhapVatTuPhuTung.cs" />
+    <Compile Include="Info\PhieuSuaChua.cs" />
+    <Compile Include="Info\PhieuThuTien.cs" />
+    <Compile Include="Info\ThamSo.cs" />
+    <Compile Include="Info\TienCong.cs" />
+    <Compile Include="Info\VatTuPhuTung.cs" />
+    <Compile Include="Info\Xe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

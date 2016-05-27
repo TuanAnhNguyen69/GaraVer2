@@ -1,0 +1,6 @@
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\bin\Debug\Gara_Data.exe.config
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\bin\Debug\Gara_Data.exe
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\bin\Debug\Gara_Data.pdb
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\obj\Debug\Gara_Data.exe
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\obj\Debug\Gara_Data.pdb
+C:\Users\Razor\documents\visual studio 2013\Projects\GaraVer2\Gara_Data\obj\Debug\Gara_Data.csprojResolveAssemblyReference.cache
