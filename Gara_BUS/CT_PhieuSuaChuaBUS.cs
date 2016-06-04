@@ -28,9 +28,20 @@ namespace Gara_BUS
         {
             return db.CT_PhieuSuaChua_KiemTra(MaPhieuSuaChua, NoiDung);
         }
-        public static void CT_PhieuSuaChua_Delete(string MaPhieuSuaChua, string NoiDung, string MaVatTuPhuTung)
+
+        public static DataTable CT_PhieuSuaChua_GetAll()
         {
-            db.CT_PhieuSuaChua_Delete(MaPhieuSuaChua, NoiDung, MaVatTuPhuTung);
+            return db.CT_PhieuSuaChua_GetAll();
+        }
+
+        public static void CT_PhieuSuaChua_Delete(string MaPhieuSuaChua, int STT)
+        {
+            db.CT_PhieuSuaChua_Delete(MaPhieuSuaChua,STT);
+        }
+
+       public static void CT_PhieuSuaChua_Update(CT_PhieuSuaChua ct)
+        {
+            db.CT_PhieuSuaChua_Update(ct);
         }
     }
 }

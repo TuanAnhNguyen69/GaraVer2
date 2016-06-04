@@ -29,5 +29,9 @@ namespace Gara_BUS
         {
             db.TienCong_Delete(Data);
         }
+        public static double TienCong_GetByNoiDung(string NoiDung)
+        {
+            return db.TienCong_GetByNoiDung(NoiDung);
+        }
     }
 }

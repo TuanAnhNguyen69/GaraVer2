@@ -28,7 +28,6 @@ namespace Gara_Data.DAL
             {
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add(new SqlParameter("@MaTienCong", Data.MaTienCong));
                     cmd.Parameters.Add(new SqlParameter("@NoiDung", Data.NoiDung));
                     cmd.Parameters.Add(new SqlParameter("@DonGia", Data.GiaTienCong));
                     cmd.ExecuteNonQuery();
@@ -43,7 +42,6 @@ namespace Gara_Data.DAL
             {
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add(new SqlParameter("@MaTienCong", Data.MaTienCong));
                     cmd.Parameters.Add(new SqlParameter("@NoiDung", Data.NoiDung));
                     cmd.Parameters.Add(new SqlParameter("@DonGia", Data.GiaTienCong));
                     cmd.ExecuteNonQuery();
@@ -58,10 +56,20 @@ namespace Gara_Data.DAL
             {
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add(new SqlParameter("@MaTienCong", Data.MaTienCong));
+                    cmd.Parameters.Add(new SqlParameter("@NoiDung", Data.NoiDung));
                     cmd.ExecuteNonQuery();
                     connection.Close();
                 }
+            }
+        }
+        public double TienCong_GetByNoiDung(string NoiDung)
+        {
+            using (var cmd = new SqlCommand("sp_TienCong_GetByNoiDung", GetConnection()))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@NoiDung", NoiDung));
+                double DonGia = Convert.ToDouble(cmd.ExecuteScalar());
+                return DonGia;
             }
         }
     }

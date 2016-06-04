@@ -22,8 +22,7 @@ namespace Gara_Data.DAL
                 cmd.Parameters.Add(new SqlParameter("@DienThoai", Data.DienThoai));
                 cmd.Parameters.Add(new SqlParameter("@DiaChi", Data.DiaChi));
                 cmd.Parameters.Add(new SqlParameter("@Email", Data.Email));
-                cmd.Parameters.Add(new SqlParameter("@NgayTiepNhan", Data.NgayTiepNhan));
-                //cmd.Parameters.Add(new SqlParameter("@TienNo", Data.TienNo));
+               // cmd.Parameters.Add(new SqlParameter("@TienNo", Data.TienNo));
                 cmd.ExecuteNonQuery();
                 connection.Close();
             }
@@ -39,8 +38,6 @@ namespace Gara_Data.DAL
                 cmd.Parameters.Add(new SqlParameter("@DienThoai", Data.DienThoai));
                 cmd.Parameters.Add(new SqlParameter("@DiaChi", Data.DiaChi));
                 cmd.Parameters.Add(new SqlParameter("@Email", Data.Email));
-                cmd.Parameters.Add(new SqlParameter("@NgayTiepNhan", Data.NgayTiepNhan));
-                cmd.Parameters.Add(new SqlParameter("@TienNo", Data.TienNo));
                 cmd.ExecuteNonQuery();
                 connection.Close();
             }
@@ -88,30 +85,8 @@ namespace Gara_Data.DAL
                 return dt;
             }
         }
-        public DataTable Xe_DSTheoNgay(string NgayTiepNhan)
-        {
-            using (var cmd = new SqlCommand ("sp_Xe_DSTheoNgay", GetConnection()))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.Parameters.Add(new SqlParameter("@NgayTiepNhan", NgayTiepNhan));
-                cmd.Parameters.Add(new SqlParameter("@NgayTiepNhan", DateTime.Now));
-
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                return dt;
-            }
-        }
-        public int Xe_DemDSTheoNgay(string Ngay)
-        {
-            using (var cmd = new SqlCommand("sp_Xe_DemDSTheoNgay", GetConnection()))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@NgayTiepNhan", Ngay));
-                int k = (int)cmd.ExecuteScalar();
-                return k;
-            }
-        }
+    
+        
         public DataTable Xe_GetTenChuXe(string Ten)
         {
             using (var cmd = new SqlCommand("sp_Xe_GetTenChuXe", GetConnection()))

@@ -14,7 +14,6 @@ namespace Gara_Data.Info
         public string DienThoai { set; get; }
         public string Email { set; get; }
         public string DiaChi { set; get; }
-        public string NgayTiepNhan { set; get; }
         public double TienNo { set; get; }
         
     }

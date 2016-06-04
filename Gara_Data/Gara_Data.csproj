@@ -55,6 +55,7 @@
     <Compile Include="DAL\PhieuThuTienDAL.cs" />
     <Compile Include="DAL\ThamSoDAL.cs" />
     <Compile Include="DAL\TienCongDAL.cs" />
+    <Compile Include="DAL\TiepNhanDAL.cs" />
     <Compile Include="DAL\VatTuPhuTungDAL.cs" />
     <Compile Include="DAL\XeDAL.cs" />
     <Compile Include="Info\BaoCaoDoanhSo.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Info\PhieuThuTien.cs" />
     <Compile Include="Info\ThamSo.cs" />
     <Compile Include="Info\TienCong.cs" />
+    <Compile Include="Info\TiepNhan.cs" />
     <Compile Include="Info\VatTuPhuTung.cs" />
     <Compile Include="Info\Xe.cs" />
     <Compile Include="Program.cs" />

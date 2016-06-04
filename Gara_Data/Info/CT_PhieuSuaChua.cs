@@ -8,9 +8,10 @@ namespace Gara_Data.Info
 {
     public class CT_PhieuSuaChua
     {
+        public int STT { set; get; }
         public string MaPhieuSuaChua { set; get; }
         //public double MaTienCong { set; get; }
-        public string MaVatTuPhuTung { set; get; }
+        public string TenVatTuPhuTung { set; get; }
         public string NoiDungSuaChua { set; get; }
         public double TienCong { set; get; }
         public int SoLuong { set; get; }

@@ -31,13 +31,18 @@ namespace Gara_BUS
             db.VatTu_Delete(Data);
         }
 
-        public static int VatTuPhuTung_GetSoLuongTon(string MaVatTuPhuTung)
+        public static int VatTuPhuTung_GetSoLuongTon(string TenVatTu)
         {
-            return db.VatTu_GetSoLuongTon(MaVatTuPhuTung);
+            return db.VatTu_GetSoLuongTon(TenVatTu);
         }
         public static string VatTuPhuTung_GetTenVatTu(string MaVatTuPhutung)
         {
             return db.VatTu_GetTenVatTu(MaVatTuPhutung);
+        }
+
+        public static double VatTuPhuTung_GetDonGia(string TenVatTu)
+        {
+            return db.VatTu_GetDonGia(TenVatTu);
         }
     }
 }

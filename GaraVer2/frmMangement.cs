@@ -26,7 +26,7 @@ namespace GaraVer2
         {
 
             #region Xe
-
+            quanlygaraoto1.EnforceConstraints = false;
             // TODO: This line of code loads data into the 'quanlygaraoto1.sp_Xe_DanhSach' table. You can move, or remove it, as needed.
             this.sp_Xe_DanhSachTableAdapter.Fill(this.quanlygaraoto1.sp_Xe_DanhSach);
             quanlygaraoto1.EnforceConstraints = false;
@@ -197,6 +197,9 @@ namespace GaraVer2
                     CT_PhieuNhapVatTuPhuTungBUS.CT_PhieuNhapVatTuPhuTung_Insert(ctpn);
                     MessageBox.Show("Thêm mới phiếu nhập vật tư thành công!");
                     dgv_VTPT_DanhSach.DataSource = PhieuNhapVatTuPhuTungBUS.VatTuPhuTungTheoMaSoPhieu_GetAll();
+                    cbox_VTPT_MaVTPT.DataSource = VatTuPhuTungBUS.VatTuPhuTung_GetAll();
+                    cbox_VTPT_MaVTPT.DisplayMember = "mavattuphutung";
+                    cbox_VTPT_MaVTPT.ValueMember = "DonGia";
                     this.btn_VTPT_LamMoi_Click(sender,e);
                 }
                 else
@@ -271,9 +274,7 @@ namespace GaraVer2
                txt_VTPT_DonGia.Clear();
                txt_VTPT_SoLuong.Clear();
                txt_VTPT_ThanhTien.Clear();
-
                dgv_VTPT_DanhSach.Enabled = false;
-
                txt_VTPT_TenVTPT.ReadOnly = false;
                btn_VTPT_Xoa.Enabled = false;
            }
@@ -302,11 +303,7 @@ namespace GaraVer2
            private void cbox_VTPT_MaVTPT_SelectedIndexChanged(object sender, EventArgs e)
            {
                txt_VTPT_DonGia.Text = cbox_VTPT_MaVTPT.SelectedValue.ToString();
-
                txt_VTPT_TenVTPT.Text = VatTuPhuTungBUS.VatTuPhuTung_GetTenVatTu(cbox_VTPT_MaVTPT.Text);
-
-               txt_VTPT_TenVTPT.ReadOnly = true;
-
            }
 
            private void dgv_VTPT_DanhSach_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -319,24 +316,29 @@ namespace GaraVer2
 
            private void btn_TienCong_Them_Click(object sender, EventArgs e)
            {
-               try
+               if (KiemTraTonTaiTienCong(txt_TienCong_NoiDung.Text))
                {
-                   TienCong tc = new TienCong();
-                   tc.MaTienCong = txt_TienCong_MaTienCong.Text;
-                   tc.NoiDung = txt_TienCong_NoiDung.Text;
-                   tc.GiaTienCong = double.Parse(txt_TienCong_DonGia.Text);
-                   TienCongBUS.TienCong_Insert(tc);
-                   MessageBox.Show("Thêm thành công!!!");
-                   dgv_TienCong_DanhSach.DataSource = TienCongBUS.TienCong_GetAll();
-                   txt_TienCong_MaTienCong.Clear();
-                   txt_TienCong_NoiDung.Clear();
-                   txt_TienCong_DonGia.Clear();
+                   MessageBox.Show("Tiền công đã có, vui lòng nhập tiền công khác!");
                }
-               catch (Exception ex)
+               else
                {
-                   MessageBox.Show(ex.Message);
+                   try
+                   {
+                       TienCong tc = new TienCong();
+                       tc.NoiDung = txt_TienCong_NoiDung.Text;
+                       tc.GiaTienCong = double.Parse(txt_TienCong_DonGia.Text);
+                       TienCongBUS.TienCong_Insert(tc);
+                       MessageBox.Show("Thêm thành công!!!");
+                       dgv_TienCong_DanhSach.DataSource = TienCongBUS.TienCong_GetAll();
+                       txt_TienCong_NoiDung.Clear();
+                       txt_TienCong_DonGia.Clear();
+                   }
+                   catch (Exception ex)
+                   {
+                       MessageBox.Show(ex.Message);
+                   }
+                   btn_TienCong_Xoa.Enabled = false;
                }
-               btn_TienCong_Xoa.Enabled = false;
            }
 
            private void btn_TienCong_CapNhat_Click(object sender, EventArgs e)
@@ -344,7 +346,6 @@ namespace GaraVer2
                try
                {
                    TienCong tc = new TienCong();
-                   tc.MaTienCong = txt_TienCong_MaTienCong.Text;
                    tc.NoiDung = txt_TienCong_NoiDung.Text;
                    tc.GiaTienCong = double.Parse(txt_TienCong_DonGia.Text);
                    TienCongBUS.TienCong_Update(tc);
@@ -362,29 +363,35 @@ namespace GaraVer2
 
            private void btn_TienCong_Xoa_Click(object sender, EventArgs e)
            {
-               try
+
+               if (KiemTraTienCong(txt_TienCong_NoiDung.Text))
                {
-                   TienCong tc = new TienCong();
-                   tc.MaTienCong = txt_TienCong_MaTienCong.Text;
-                   TienCongBUS.TienCong_Delete(tc);
-                   MessageBox.Show("Xóa thành công!!!");
-                   dgv_TienCong_DanhSach.DataSource = TienCongBUS.TienCong_GetAll();
-                   txt_TienCong_NoiDung.Clear();
-                   txt_TienCong_DonGia.Clear();
+                   MessageBox.Show("Tồn tại phiếu sửa chữa hoặc vật tư có liên quan, không thể xóa");
                }
-               catch (Exception ex)
+               else
                {
-                   MessageBox.Show(ex.Message);
+                   try
+                   {
+                       TienCong tc = new TienCong();
+                       tc.NoiDung = txt_TienCong_NoiDung.Text;
+                       TienCongBUS.TienCong_Delete(tc);
+                       MessageBox.Show("Xóa thành công!!!");
+                       dgv_TienCong_DanhSach.DataSource = TienCongBUS.TienCong_GetAll();
+                       txt_TienCong_NoiDung.Clear();
+                       txt_TienCong_DonGia.Clear();
+                   }
+                   catch (Exception ex)
+                   {
+                       MessageBox.Show(ex.Message);
+                   }
+                   btn_TienCong_Xoa.Enabled = false;
                }
-               btn_TienCong_Xoa.Enabled = false;
            }
 
            private void dgv_TienCong_DanhSach_Click(object sender, EventArgs e)
            {
                try
                {
-                   txt_TienCong_MaTienCong.DataBindings.Clear();
-                   txt_TienCong_MaTienCong.DataBindings.Add("text", dgv_TienCong_DanhSach.DataSource, "MaTienCong");
                    txt_TienCong_DonGia.DataBindings.Clear();
                    txt_TienCong_DonGia.DataBindings.Add("text", dgv_TienCong_DanhSach.DataSource, "DonGia");
                    txt_TienCong_NoiDung.DataBindings.Clear();
@@ -411,10 +418,36 @@ namespace GaraVer2
 
            private void btn_TienCong_LamMoi_Click(object sender, EventArgs e)
            {
-               txt_TienCong_MaTienCong.Text = "";
                txt_TienCong_NoiDung.Text = "";
                txt_TienCong_DonGia.Text = "";
                btn_TienCong_Xoa.Enabled = false;
+           }
+
+           private Boolean KiemTraTienCong(String NoiDung)
+           {
+               DataTable NoiDungSua = CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_GetAll();
+               for (int i = 0; i < NoiDungSua.Rows.Count; i++)
+               {
+                   if (NoiDungSua.Rows[i].ItemArray[2].Equals(NoiDung))
+                   {
+                       return true;
+                   }
+
+               }
+               return false;
+           }
+           private Boolean KiemTraTonTaiTienCong(String NoiDung)
+           {
+               DataTable NoiDungSua = TienCongBUS.TienCong_GetAll();
+               for (int i = 0; i < NoiDungSua.Rows.Count; i++)
+               {
+                   if (NoiDungSua.Rows[i].ItemArray[0].Equals(NoiDung))
+                   {
+                       return true;
+                   }
+
+               }
+               return false;
            }
         #endregion
 

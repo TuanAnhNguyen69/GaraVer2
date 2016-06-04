@@ -30,10 +30,6 @@ namespace Gara_BUS
             return db.Xe_DanhSach();
         }
 
-        public static DataTable Xe_DSTheoNgay(string NgayTiepNhan)
-        {
-            return db.Xe_DSTheoNgay(NgayTiepNhan);
-        }
         public static DataTable Xe_GetTenChuXe(string Ten)
         {
             return db.Xe_GetTenChuXe(Ten);
@@ -53,10 +49,6 @@ namespace Gara_BUS
         public static DataTable Xe_DSDaThuTien()
         {
             return db.Xe_DSDaThuTien();
-        }
-        public static int Xe_DemDSTheoNgay(string Ngay)
-        {
-            return db.Xe_DemDSTheoNgay(Ngay);
         }
         public static int SoXeSuaChuaTrongNgay()
         {

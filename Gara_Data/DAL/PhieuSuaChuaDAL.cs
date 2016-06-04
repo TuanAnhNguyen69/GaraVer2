@@ -19,6 +19,7 @@ namespace Gara_Data.DAL
                 cmd.Parameters.Add(new SqlParameter("@MaPhieuSuaChua", Data.MaPhieuSuaChua));
                 cmd.Parameters.Add(new SqlParameter("@BienSo", Data.BienSo));
                 cmd.Parameters.Add(new SqlParameter("@NgaySuaChua", Data.NgaySuaChua));
+                cmd.Parameters.Add(new SqlParameter("@MaTiepNhan", Data.MaTiepNhan));
                 cmd.ExecuteNonQuery();
                 connection.Close();
             }
@@ -46,16 +47,7 @@ namespace Gara_Data.DAL
                 return dt;
             }
         }
-        //public int PhieuSuaChua_KiemTraDaSuaChua(string BienSo)
-        //{
-        //    using (var cmd = new SqlCommand("sp_PhieuSuaChua_KiemTraDaSuaChua", GetConnection()))
-        //    {
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.Add(new SqlParameter("@BienSo", BienSo));
-        //        return (int)cmd.ExecuteScalar();
-        //    }
-        //}
-
+        
         public DataTable PhieuSuaChua_GetTongTien(string MaPhieuSuaChua, string BienSo)
         {
             using (var cmd = new SqlCommand("sp_PhieuSuaChua_GetTongTien", GetConnection()))
@@ -79,7 +71,30 @@ namespace Gara_Data.DAL
                 return dr;
             }
         }
-        
+
+        public DataTable PhieuSuaChua_GetByDay(string NgaySua)
+        {
+            using (var cmd = new SqlCommand("sp_PhieuSuaChua_GetByDay", GetConnection()))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@NgaySuaChua", NgaySua);
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public void PhieuSuaChua_Delete(string MaPhieu)
+        {
+            using (var cmd = new SqlCommand("sp_PhieuSuaChua_Delete", GetConnection()))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@MaPhieuSuaChua", MaPhieu);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
     }
     
 }

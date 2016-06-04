@@ -60,13 +60,14 @@ namespace Gara_Data.DAL
             }
         }
 
-        public int VatTu_GetSoLuongTon(string MaVatTuPhuTung)
+        public int VatTu_GetSoLuongTon(string TenVatTu)
         {
             using (var cmd = new SqlCommand("sp_VatTuPhuTung_GetSoLuongTon", GetConnection()))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@MaVatTuPhuTung", MaVatTuPhuTung));
-                return (int)cmd.ExecuteScalar();
+                cmd.Parameters.Add(new SqlParameter("@TenVatTu",TenVatTu));
+                int x= Convert.ToInt16(cmd.ExecuteScalar());
+                return x;
             }
         }
         public string  VatTu_GetTenVatTu(string MaVatTuPhuTung)
@@ -76,6 +77,18 @@ namespace Gara_Data.DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add(new SqlParameter("@MaVatTuPhuTung", MaVatTuPhuTung));
                 return (string)cmd.ExecuteScalar();
+            }
+        }
+
+        public double VatTu_GetDonGia(string TenVatTu)
+        {
+            using (var cmd = new SqlCommand("sp_VatTuPhuTung_GetDonGia", GetConnection()))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@TenVatTu", TenVatTu));
+                double DonGia= new double();
+                DonGia=Convert.ToDouble(cmd.ExecuteScalar());
+                return DonGia;
             }
         }
     }

@@ -38,5 +38,15 @@ namespace Gara_BUS
         {
             return db.PhieuSuaChua_KTMaSuaChua();
         }
+
+        public static DataTable PhieuSuaChua_GetByDay(string NgaySua)
+        {
+            return db.PhieuSuaChua_GetByDay(NgaySua);
+        }
+
+        public static void PhieuSuaChua_Delete(string MaPhieu) 
+        {
+            db.PhieuSuaChua_Delete(MaPhieu);
+        }
     }
 }

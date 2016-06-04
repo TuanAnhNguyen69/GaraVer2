@@ -57,21 +57,21 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(0, 425);
-            this.panelControl2.Size = new System.Drawing.Size(979, 44);
+            this.panelControl2.Location = new System.Drawing.Point(0, 290);
+            this.panelControl2.Size = new System.Drawing.Size(1302, 44);
             // 
             // panelControl4
             // 
-            this.panelControl4.Location = new System.Drawing.Point(864, 2);
+            this.panelControl4.Location = new System.Drawing.Point(1187, 2);
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(975, 40);
+            this.label2.Size = new System.Drawing.Size(1298, 40);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(979, 425);
+            this.groupControl1.Size = new System.Drawing.Size(1302, 290);
             this.groupControl1.Text = "Báo cáo tồn kho";
             // 
             // tableLayoutPanel1
@@ -86,7 +86,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(975, 402);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 267);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupPanel2
@@ -95,9 +95,9 @@
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.reportViewer1);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupPanel2.Location = new System.Drawing.Point(304, 3);
+            this.groupPanel2.Location = new System.Drawing.Point(404, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(668, 396);
+            this.groupPanel2.Size = new System.Drawing.Size(891, 261);
             // 
             // 
             // 
@@ -134,7 +134,7 @@
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(662, 374);
+            this.reportViewer1.Size = new System.Drawing.Size(885, 239);
             this.reportViewer1.TabIndex = 0;
             // 
             // groupPanel1
@@ -151,7 +151,7 @@
             this.groupPanel1.Controls.Add(this.labelControl5);
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(295, 396);
+            this.groupPanel1.Size = new System.Drawing.Size(395, 261);
             // 
             // 
             // 
@@ -187,7 +187,7 @@
             // 
             this.btnLapBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLapBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Image")));
-            this.btnLapBaoCao.Location = new System.Drawing.Point(46, 236);
+            this.btnLapBaoCao.Location = new System.Drawing.Point(93, 236);
             this.btnLapBaoCao.Name = "btnLapBaoCao";
             this.btnLapBaoCao.Size = new System.Drawing.Size(126, 46);
             this.btnLapBaoCao.TabIndex = 36;
@@ -211,7 +211,7 @@
             "10",
             "11",
             "12"});
-            this.cbThang.Location = new System.Drawing.Point(100, 102);
+            this.cbThang.Location = new System.Drawing.Point(147, 102);
             this.cbThang.Name = "cbThang";
             this.cbThang.Size = new System.Drawing.Size(96, 26);
             this.cbThang.TabIndex = 35;
@@ -220,7 +220,7 @@
             // 
             this.txtNam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNam.Location = new System.Drawing.Point(100, 158);
+            this.txtNam.Location = new System.Drawing.Point(147, 158);
             this.txtNam.Name = "txtNam";
             this.txtNam.Size = new System.Drawing.Size(96, 24);
             this.txtNam.TabIndex = 34;
@@ -234,7 +234,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(25, 160);
+            this.labelControl1.Location = new System.Drawing.Point(72, 160);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(36, 18);
             this.labelControl1.TabIndex = 33;
@@ -249,7 +249,7 @@
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl5.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl5.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl5.Location = new System.Drawing.Point(25, 105);
+            this.labelControl5.Location = new System.Drawing.Point(72, 105);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(45, 18);
             this.labelControl5.TabIndex = 32;
@@ -273,7 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 469);
+            this.ClientSize = new System.Drawing.Size(1302, 334);
             this.Name = "frmInventoryReport";
             this.Text = "frmInventoryReport";
             this.Load += new System.EventHandler(this.frmInventoryReport_Load);
