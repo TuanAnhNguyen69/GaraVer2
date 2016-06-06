@@ -29,35 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventoryReport));
+            this.bAOCAOTONBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet11 = new GaraVer2.DataSet1();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnLapBaoCao = new DevExpress.XtraEditors.SimpleButton();
-            this.cbThang = new System.Windows.Forms.ComboBox();
-            this.txtNam = new System.Windows.Forms.TextBox();
+            this.combobox_BaoCaoTon_Thang = new System.Windows.Forms.ComboBox();
+            this.textbox_BaoCaoTon_Nam = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.dataSet11 = new GaraVer2.DataSet1();
             this.InventorybindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bAOCAOTONTableAdapter = new GaraVer2.DataSet1TableAdapters.BAOCAOTONTableAdapter();
+            this.DataSet1 = new GaraVer2.DataSet1();
+            this.BAOCAOTONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bAOCAOTONBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventorybindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BAOCAOTONBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(0, 290);
+            this.panelControl2.Location = new System.Drawing.Point(0, 314);
             this.panelControl2.Size = new System.Drawing.Size(1302, 44);
             // 
             // panelControl4
@@ -71,8 +78,18 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(1302, 290);
+            this.groupControl1.Size = new System.Drawing.Size(1302, 314);
             this.groupControl1.Text = "Báo cáo tồn kho";
+            // 
+            // bAOCAOTONBindingSource1
+            // 
+            this.bAOCAOTONBindingSource1.DataMember = "BAOCAOTON";
+            this.bAOCAOTONBindingSource1.DataSource = this.dataSet11;
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableLayoutPanel1
             // 
@@ -86,7 +103,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 267);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 291);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupPanel2
@@ -97,7 +114,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(404, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(891, 261);
+            this.groupPanel2.Size = new System.Drawing.Size(891, 285);
             // 
             // 
             // 
@@ -132,9 +149,13 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet2";
+            reportDataSource1.Value = this.bAOCAOTONBindingSource1;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "GaraVer2.BaoCaoTonKho.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(885, 239);
+            this.reportViewer1.Size = new System.Drawing.Size(885, 263);
             this.reportViewer1.TabIndex = 0;
             // 
             // groupPanel1
@@ -145,13 +166,13 @@
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.btnLapBaoCao);
-            this.groupPanel1.Controls.Add(this.cbThang);
-            this.groupPanel1.Controls.Add(this.txtNam);
+            this.groupPanel1.Controls.Add(this.combobox_BaoCaoTon_Thang);
+            this.groupPanel1.Controls.Add(this.textbox_BaoCaoTon_Nam);
             this.groupPanel1.Controls.Add(this.labelControl1);
             this.groupPanel1.Controls.Add(this.labelControl5);
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(395, 261);
+            this.groupPanel1.Size = new System.Drawing.Size(395, 285);
             // 
             // 
             // 
@@ -187,18 +208,18 @@
             // 
             this.btnLapBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLapBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Image")));
-            this.btnLapBaoCao.Location = new System.Drawing.Point(93, 236);
+            this.btnLapBaoCao.Location = new System.Drawing.Point(82, 236);
             this.btnLapBaoCao.Name = "btnLapBaoCao";
             this.btnLapBaoCao.Size = new System.Drawing.Size(126, 46);
             this.btnLapBaoCao.TabIndex = 36;
             this.btnLapBaoCao.Text = "Lập báo cáo";
             // 
-            // cbThang
+            // combobox_BaoCaoTon_Thang
             // 
-            this.cbThang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cbThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbThang.FormattingEnabled = true;
-            this.cbThang.Items.AddRange(new object[] {
+            this.combobox_BaoCaoTon_Thang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.combobox_BaoCaoTon_Thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combobox_BaoCaoTon_Thang.FormattingEnabled = true;
+            this.combobox_BaoCaoTon_Thang.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -211,19 +232,19 @@
             "10",
             "11",
             "12"});
-            this.cbThang.Location = new System.Drawing.Point(147, 102);
-            this.cbThang.Name = "cbThang";
-            this.cbThang.Size = new System.Drawing.Size(96, 26);
-            this.cbThang.TabIndex = 35;
+            this.combobox_BaoCaoTon_Thang.Location = new System.Drawing.Point(136, 102);
+            this.combobox_BaoCaoTon_Thang.Name = "combobox_BaoCaoTon_Thang";
+            this.combobox_BaoCaoTon_Thang.Size = new System.Drawing.Size(96, 26);
+            this.combobox_BaoCaoTon_Thang.TabIndex = 35;
             // 
-            // txtNam
+            // textbox_BaoCaoTon_Nam
             // 
-            this.txtNam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNam.Location = new System.Drawing.Point(147, 158);
-            this.txtNam.Name = "txtNam";
-            this.txtNam.Size = new System.Drawing.Size(96, 24);
-            this.txtNam.TabIndex = 34;
+            this.textbox_BaoCaoTon_Nam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textbox_BaoCaoTon_Nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_BaoCaoTon_Nam.Location = new System.Drawing.Point(136, 158);
+            this.textbox_BaoCaoTon_Nam.Name = "textbox_BaoCaoTon_Nam";
+            this.textbox_BaoCaoTon_Nam.Size = new System.Drawing.Size(96, 24);
+            this.textbox_BaoCaoTon_Nam.TabIndex = 34;
             // 
             // labelControl1
             // 
@@ -234,7 +255,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(72, 160);
+            this.labelControl1.Location = new System.Drawing.Point(61, 160);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(36, 18);
             this.labelControl1.TabIndex = 33;
@@ -249,16 +270,11 @@
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl5.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl5.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl5.Location = new System.Drawing.Point(72, 105);
+            this.labelControl5.Location = new System.Drawing.Point(61, 105);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(45, 18);
             this.labelControl5.TabIndex = 32;
             this.labelControl5.Text = "Tháng:\r\n";
-            // 
-            // dataSet11
-            // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // InventorybindingSource1
             // 
@@ -269,11 +285,21 @@
             // 
             this.bAOCAOTONTableAdapter.ClearBeforeFill = true;
             // 
+            // DataSet1
+            // 
+            this.DataSet1.DataSetName = "DataSet1";
+            this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BAOCAOTONBindingSource
+            // 
+            this.BAOCAOTONBindingSource.DataMember = "BAOCAOTON";
+            this.BAOCAOTONBindingSource.DataSource = this.DataSet1;
+            // 
             // frmInventoryReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 334);
+            this.ClientSize = new System.Drawing.Size(1302, 358);
             this.Name = "frmInventoryReport";
             this.Text = "frmInventoryReport";
             this.Load += new System.EventHandler(this.frmInventoryReport_Load);
@@ -283,12 +309,15 @@
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bAOCAOTONBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InventorybindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BAOCAOTONBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,8 +327,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevExpress.XtraEditors.SimpleButton btnLapBaoCao;
-        private System.Windows.Forms.ComboBox cbThang;
-        private System.Windows.Forms.TextBox txtNam;
+        private System.Windows.Forms.ComboBox combobox_BaoCaoTon_Thang;
+        private System.Windows.Forms.TextBox textbox_BaoCaoTon_Nam;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
@@ -307,6 +336,9 @@
         private DataSet1 dataSet11;
         private System.Windows.Forms.BindingSource InventorybindingSource1;
         private DataSet1TableAdapters.BAOCAOTONTableAdapter bAOCAOTONTableAdapter;
+        private System.Windows.Forms.BindingSource BAOCAOTONBindingSource;
+        private DataSet1 DataSet1;
+        private System.Windows.Forms.BindingSource bAOCAOTONBindingSource1;
         
     }
 }

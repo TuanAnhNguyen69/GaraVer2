@@ -48,7 +48,6 @@
     <Compile Include="DAL\CT_BaoCaoDoanhSoDAL.cs" />
     <Compile Include="DAL\CT_PhieuNhapVatTuPhuTungDAL.cs" />
     <Compile Include="DAL\CT_PhieuSuaChuaDAL.cs" />
-    <Compile Include="DAL\CT_VatTuPhuTungDAL.cs" />
     <Compile Include="DAL\HieuXeDAL.cs" />
     <Compile Include="DAL\PhieuNhapVatTuPhuTungDAL.cs" />
     <Compile Include="DAL\PhieuSuaChuaDAL.cs" />
@@ -63,7 +62,6 @@
     <Compile Include="Info\CT_BaoCaoDoanhSo.cs" />
     <Compile Include="Info\CT_PhieuNhapVatTuPhuTung.cs" />
     <Compile Include="Info\CT_PhieuSuaChua.cs" />
-    <Compile Include="Info\CT_VatTuPhuTung.cs" />
     <Compile Include="Info\HieuXe.cs" />
     <Compile Include="Info\PhieuNhapVatTuPhuTung.cs" />
     <Compile Include="Info\PhieuSuaChua.cs" />

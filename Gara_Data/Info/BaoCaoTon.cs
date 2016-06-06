@@ -8,7 +8,7 @@ namespace Gara_Data.Info
 {
     public class BaoCaoTon
     {
-        public string MaVatTuPhuTung { set; get; }
+        public string TenVatTuPhuTung { set; get; }
         public int Thang { set; get; }
         public int Nam { set; get; }
         public int TonDau { set; get; }

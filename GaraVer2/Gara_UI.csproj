@@ -207,10 +207,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
-    <EmbeddedResource Include="Report3.rdlc" />
-    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="BaoCaoDoanhSo.rdlc" />
+    <EmbeddedResource Include="BaoCaoTonKho.rdlc" />
+    <EmbeddedResource Include="PhieuSuaChua.rdlc" />
+    <EmbeddedResource Include="PhieuThuTien.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

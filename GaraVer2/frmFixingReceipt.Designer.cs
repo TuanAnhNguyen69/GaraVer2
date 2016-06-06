@@ -46,11 +46,11 @@
             this.cbox_PhieuSuaChua_TenVatTu = new System.Windows.Forms.ComboBox();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.cbox_PhieuSuaChua_MaTiepNhan = new System.Windows.Forms.ComboBox();
             this.txt_PhieuSuaChua_BienSo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn_PhieuSuaChua_LamMoi1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_PhieuSuaChua_CapNhat1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_PhieuSuaChua_Xoa1 = new DevExpress.XtraEditors.SimpleButton();
-            this.txt_PhieuSuaChua_MaTiepNhan = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.date_PhieuSuaChua_NgaySuaChua = new System.Windows.Forms.DateTimePicker();
             this.txt_PhieuSuaChua_MaPhieu = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -102,7 +102,7 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(0, 394);
+            this.panelControl2.Location = new System.Drawing.Point(0, 484);
             this.panelControl2.Size = new System.Drawing.Size(1302, 44);
             // 
             // panelControl4
@@ -116,7 +116,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.tableLayoutPanel1);
-            this.groupControl1.Size = new System.Drawing.Size(1302, 394);
+            this.groupControl1.Size = new System.Drawing.Size(1302, 484);
             this.groupControl1.Text = "Phiếu sửa chữa";
             // 
             // tableLayoutPanel1
@@ -133,7 +133,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 371);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 461);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -148,7 +148,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.62637F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.37363F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 365);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 455);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // groupPanel4
@@ -168,9 +168,9 @@
             this.groupPanel4.Controls.Add(this.cbox_PhieuSuaChua_TenVatTu);
             this.groupPanel4.Controls.Add(this.labelControl16);
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupPanel4.Location = new System.Drawing.Point(3, 198);
+            this.groupPanel4.Location = new System.Drawing.Point(3, 246);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(304, 164);
+            this.groupPanel4.Size = new System.Drawing.Size(304, 206);
             // 
             // 
             // 
@@ -206,7 +206,7 @@
             // 
             this.btn_PhieuSuaChua_LamMoi2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_LamMoi2.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_LamMoi2.Image")));
-            this.btn_PhieuSuaChua_LamMoi2.Location = new System.Drawing.Point(39, 146);
+            this.btn_PhieuSuaChua_LamMoi2.Location = new System.Drawing.Point(87, 149);
             this.btn_PhieuSuaChua_LamMoi2.Name = "btn_PhieuSuaChua_LamMoi2";
             this.btn_PhieuSuaChua_LamMoi2.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_LamMoi2.TabIndex = 61;
@@ -217,7 +217,7 @@
             // 
             this.btn_PhieuSuaChua_CapNhat2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_CapNhat2.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_CapNhat2.Image")));
-            this.btn_PhieuSuaChua_CapNhat2.Location = new System.Drawing.Point(115, 117);
+            this.btn_PhieuSuaChua_CapNhat2.Location = new System.Drawing.Point(163, 120);
             this.btn_PhieuSuaChua_CapNhat2.Name = "btn_PhieuSuaChua_CapNhat2";
             this.btn_PhieuSuaChua_CapNhat2.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_CapNhat2.TabIndex = 60;
@@ -228,7 +228,7 @@
             // 
             this.btn_PhieuSuaChua_Xoa2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_Xoa2.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_Xoa2.Image")));
-            this.btn_PhieuSuaChua_Xoa2.Location = new System.Drawing.Point(115, 146);
+            this.btn_PhieuSuaChua_Xoa2.Location = new System.Drawing.Point(163, 149);
             this.btn_PhieuSuaChua_Xoa2.Name = "btn_PhieuSuaChua_Xoa2";
             this.btn_PhieuSuaChua_Xoa2.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_Xoa2.TabIndex = 59;
@@ -239,7 +239,7 @@
             // 
             this.btn_PhieuSuaChua_Them.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_Them.Image")));
-            this.btn_PhieuSuaChua_Them.Location = new System.Drawing.Point(39, 117);
+            this.btn_PhieuSuaChua_Them.Location = new System.Drawing.Point(87, 120);
             this.btn_PhieuSuaChua_Them.Name = "btn_PhieuSuaChua_Them";
             this.btn_PhieuSuaChua_Them.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_Them.TabIndex = 58;
@@ -255,7 +255,7 @@
             this.label_PhieuSuaChua_SoLuongTon.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.label_PhieuSuaChua_SoLuongTon.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.label_PhieuSuaChua_SoLuongTon.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.label_PhieuSuaChua_SoLuongTon.Location = new System.Drawing.Point(180, 75);
+            this.label_PhieuSuaChua_SoLuongTon.Location = new System.Drawing.Point(228, 78);
             this.label_PhieuSuaChua_SoLuongTon.Name = "label_PhieuSuaChua_SoLuongTon";
             this.label_PhieuSuaChua_SoLuongTon.Size = new System.Drawing.Size(8, 18);
             this.label_PhieuSuaChua_SoLuongTon.TabIndex = 49;
@@ -270,7 +270,7 @@
             this.labelControl10.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl10.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl10.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl10.Location = new System.Drawing.Point(144, 75);
+            this.labelControl10.Location = new System.Drawing.Point(192, 78);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(30, 18);
             this.labelControl10.TabIndex = 48;
@@ -281,7 +281,7 @@
             this.cbox_PhieuSuaChua_NoiDung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cbox_PhieuSuaChua_NoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_PhieuSuaChua_NoiDung.FormattingEnabled = true;
-            this.cbox_PhieuSuaChua_NoiDung.Location = new System.Drawing.Point(39, 9);
+            this.cbox_PhieuSuaChua_NoiDung.Location = new System.Drawing.Point(87, 12);
             this.cbox_PhieuSuaChua_NoiDung.Name = "cbox_PhieuSuaChua_NoiDung";
             this.cbox_PhieuSuaChua_NoiDung.Size = new System.Drawing.Size(149, 26);
             this.cbox_PhieuSuaChua_NoiDung.TabIndex = 44;
@@ -295,7 +295,7 @@
             this.labelControl11.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl11.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl11.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl11.Location = new System.Drawing.Point(-46, 12);
+            this.labelControl11.Location = new System.Drawing.Point(2, 15);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(63, 18);
             this.labelControl11.TabIndex = 43;
@@ -310,7 +310,7 @@
             this.txt_PhieuSuaChua_SoLuong.Border.Class = "TextBoxBorder";
             this.txt_PhieuSuaChua_SoLuong.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_PhieuSuaChua_SoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PhieuSuaChua_SoLuong.Location = new System.Drawing.Point(39, 73);
+            this.txt_PhieuSuaChua_SoLuong.Location = new System.Drawing.Point(87, 76);
             this.txt_PhieuSuaChua_SoLuong.Name = "txt_PhieuSuaChua_SoLuong";
             this.txt_PhieuSuaChua_SoLuong.PreventEnterBeep = true;
             this.txt_PhieuSuaChua_SoLuong.Size = new System.Drawing.Size(99, 24);
@@ -325,7 +325,7 @@
             this.labelControl15.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl15.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl15.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl15.Location = new System.Drawing.Point(-46, 44);
+            this.labelControl15.Location = new System.Drawing.Point(2, 47);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(68, 18);
             this.labelControl15.TabIndex = 30;
@@ -336,7 +336,7 @@
             this.cbox_PhieuSuaChua_TenVatTu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cbox_PhieuSuaChua_TenVatTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_PhieuSuaChua_TenVatTu.FormattingEnabled = true;
-            this.cbox_PhieuSuaChua_TenVatTu.Location = new System.Drawing.Point(39, 41);
+            this.cbox_PhieuSuaChua_TenVatTu.Location = new System.Drawing.Point(87, 44);
             this.cbox_PhieuSuaChua_TenVatTu.Name = "cbox_PhieuSuaChua_TenVatTu";
             this.cbox_PhieuSuaChua_TenVatTu.Size = new System.Drawing.Size(149, 26);
             this.cbox_PhieuSuaChua_TenVatTu.TabIndex = 30;
@@ -351,7 +351,7 @@
             this.labelControl16.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl16.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl16.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl16.Location = new System.Drawing.Point(-46, 75);
+            this.labelControl16.Location = new System.Drawing.Point(2, 78);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(63, 18);
             this.labelControl16.TabIndex = 31;
@@ -361,11 +361,11 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.cbox_PhieuSuaChua_MaTiepNhan);
             this.groupPanel1.Controls.Add(this.txt_PhieuSuaChua_BienSo);
             this.groupPanel1.Controls.Add(this.btn_PhieuSuaChua_LamMoi1);
             this.groupPanel1.Controls.Add(this.btn_PhieuSuaChua_CapNhat1);
             this.groupPanel1.Controls.Add(this.btn_PhieuSuaChua_Xoa1);
-            this.groupPanel1.Controls.Add(this.txt_PhieuSuaChua_MaTiepNhan);
             this.groupPanel1.Controls.Add(this.labelControl6);
             this.groupPanel1.Controls.Add(this.date_PhieuSuaChua_NgaySuaChua);
             this.groupPanel1.Controls.Add(this.txt_PhieuSuaChua_MaPhieu);
@@ -376,7 +376,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(304, 189);
+            this.groupPanel1.Size = new System.Drawing.Size(304, 237);
             // 
             // 
             // 
@@ -408,6 +408,15 @@
             this.groupPanel1.TabIndex = 1;
             this.groupPanel1.Text = "Lập phiếu sửa chữa";
             // 
+            // cbox_PhieuSuaChua_MaTiepNhan
+            // 
+            this.cbox_PhieuSuaChua_MaTiepNhan.FormattingEnabled = true;
+            this.cbox_PhieuSuaChua_MaTiepNhan.Location = new System.Drawing.Point(117, 43);
+            this.cbox_PhieuSuaChua_MaTiepNhan.Name = "cbox_PhieuSuaChua_MaTiepNhan";
+            this.cbox_PhieuSuaChua_MaTiepNhan.Size = new System.Drawing.Size(149, 21);
+            this.cbox_PhieuSuaChua_MaTiepNhan.TabIndex = 59;
+            this.cbox_PhieuSuaChua_MaTiepNhan.TextChanged += new System.EventHandler(this.cbox_PhieuSuaChua_MaTiepNhan_TextChanged);
+            // 
             // txt_PhieuSuaChua_BienSo
             // 
             this.txt_PhieuSuaChua_BienSo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -417,7 +426,7 @@
             this.txt_PhieuSuaChua_BienSo.Border.Class = "TextBoxBorder";
             this.txt_PhieuSuaChua_BienSo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_PhieuSuaChua_BienSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PhieuSuaChua_BienSo.Location = new System.Drawing.Point(39, 74);
+            this.txt_PhieuSuaChua_BienSo.Location = new System.Drawing.Point(87, 73);
             this.txt_PhieuSuaChua_BienSo.Name = "txt_PhieuSuaChua_BienSo";
             this.txt_PhieuSuaChua_BienSo.PreventEnterBeep = true;
             this.txt_PhieuSuaChua_BienSo.Size = new System.Drawing.Size(149, 24);
@@ -427,7 +436,7 @@
             // 
             this.btn_PhieuSuaChua_LamMoi1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_LamMoi1.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_LamMoi1.Image")));
-            this.btn_PhieuSuaChua_LamMoi1.Location = new System.Drawing.Point(39, 177);
+            this.btn_PhieuSuaChua_LamMoi1.Location = new System.Drawing.Point(87, 176);
             this.btn_PhieuSuaChua_LamMoi1.Name = "btn_PhieuSuaChua_LamMoi1";
             this.btn_PhieuSuaChua_LamMoi1.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_LamMoi1.TabIndex = 57;
@@ -438,38 +447,22 @@
             // 
             this.btn_PhieuSuaChua_CapNhat1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_CapNhat1.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_CapNhat1.Image")));
-            this.btn_PhieuSuaChua_CapNhat1.Location = new System.Drawing.Point(115, 148);
+            this.btn_PhieuSuaChua_CapNhat1.Location = new System.Drawing.Point(163, 147);
             this.btn_PhieuSuaChua_CapNhat1.Name = "btn_PhieuSuaChua_CapNhat1";
             this.btn_PhieuSuaChua_CapNhat1.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_CapNhat1.TabIndex = 56;
-            this.btn_PhieuSuaChua_CapNhat1.Text = "Cập nhật";
+            this.btn_PhieuSuaChua_CapNhat1.Text = "In";
             // 
             // btn_PhieuSuaChua_Xoa1
             // 
             this.btn_PhieuSuaChua_Xoa1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_Xoa1.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_Xoa1.Image")));
-            this.btn_PhieuSuaChua_Xoa1.Location = new System.Drawing.Point(115, 177);
+            this.btn_PhieuSuaChua_Xoa1.Location = new System.Drawing.Point(163, 176);
             this.btn_PhieuSuaChua_Xoa1.Name = "btn_PhieuSuaChua_Xoa1";
             this.btn_PhieuSuaChua_Xoa1.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_Xoa1.TabIndex = 55;
             this.btn_PhieuSuaChua_Xoa1.Text = "Xóa";
             this.btn_PhieuSuaChua_Xoa1.Click += new System.EventHandler(this.btn_PhieuSuaChua_Xoa1_Click);
-            // 
-            // txt_PhieuSuaChua_MaTiepNhan
-            // 
-            this.txt_PhieuSuaChua_MaTiepNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            // 
-            // 
-            // 
-            this.txt_PhieuSuaChua_MaTiepNhan.Border.Class = "TextBoxBorder";
-            this.txt_PhieuSuaChua_MaTiepNhan.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txt_PhieuSuaChua_MaTiepNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PhieuSuaChua_MaTiepNhan.Location = new System.Drawing.Point(39, 44);
-            this.txt_PhieuSuaChua_MaTiepNhan.Name = "txt_PhieuSuaChua_MaTiepNhan";
-            this.txt_PhieuSuaChua_MaTiepNhan.PreventEnterBeep = true;
-            this.txt_PhieuSuaChua_MaTiepNhan.Size = new System.Drawing.Size(149, 24);
-            this.txt_PhieuSuaChua_MaTiepNhan.TabIndex = 54;
-            this.txt_PhieuSuaChua_MaTiepNhan.TextChanged += new System.EventHandler(this.txt_PhieuSuaChua_MaTiepNhan_TextChanged);
             // 
             // labelControl6
             // 
@@ -480,7 +473,7 @@
             this.labelControl6.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl6.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl6.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl6.Location = new System.Drawing.Point(-46, 39);
+            this.labelControl6.Location = new System.Drawing.Point(2, 38);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(52, 36);
             this.labelControl6.TabIndex = 53;
@@ -491,7 +484,7 @@
             this.date_PhieuSuaChua_NgaySuaChua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.date_PhieuSuaChua_NgaySuaChua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_PhieuSuaChua_NgaySuaChua.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_PhieuSuaChua_NgaySuaChua.Location = new System.Drawing.Point(39, 106);
+            this.date_PhieuSuaChua_NgaySuaChua.Location = new System.Drawing.Point(87, 105);
             this.date_PhieuSuaChua_NgaySuaChua.Name = "date_PhieuSuaChua_NgaySuaChua";
             this.date_PhieuSuaChua_NgaySuaChua.Size = new System.Drawing.Size(149, 24);
             this.date_PhieuSuaChua_NgaySuaChua.TabIndex = 29;
@@ -506,7 +499,7 @@
             this.txt_PhieuSuaChua_MaPhieu.Border.Class = "TextBoxBorder";
             this.txt_PhieuSuaChua_MaPhieu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_PhieuSuaChua_MaPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PhieuSuaChua_MaPhieu.Location = new System.Drawing.Point(39, 14);
+            this.txt_PhieuSuaChua_MaPhieu.Location = new System.Drawing.Point(87, 13);
             this.txt_PhieuSuaChua_MaPhieu.Name = "txt_PhieuSuaChua_MaPhieu";
             this.txt_PhieuSuaChua_MaPhieu.PreventEnterBeep = true;
             this.txt_PhieuSuaChua_MaPhieu.Size = new System.Drawing.Size(149, 24);
@@ -516,7 +509,7 @@
             // 
             this.btn_PhieuSuaChua_LapPhieu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_PhieuSuaChua_LapPhieu.Image = ((System.Drawing.Image)(resources.GetObject("btn_PhieuSuaChua_LapPhieu.Image")));
-            this.btn_PhieuSuaChua_LapPhieu.Location = new System.Drawing.Point(39, 148);
+            this.btn_PhieuSuaChua_LapPhieu.Location = new System.Drawing.Point(87, 147);
             this.btn_PhieuSuaChua_LapPhieu.Name = "btn_PhieuSuaChua_LapPhieu";
             this.btn_PhieuSuaChua_LapPhieu.Size = new System.Drawing.Size(73, 23);
             this.btn_PhieuSuaChua_LapPhieu.TabIndex = 40;
@@ -532,7 +525,7 @@
             this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl3.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl3.Location = new System.Drawing.Point(-46, 111);
+            this.labelControl3.Location = new System.Drawing.Point(2, 110);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(66, 18);
             this.labelControl3.TabIndex = 22;
@@ -547,7 +540,7 @@
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl2.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl2.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl2.Location = new System.Drawing.Point(-46, 16);
+            this.labelControl2.Location = new System.Drawing.Point(2, 15);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(64, 18);
             this.labelControl2.TabIndex = 21;
@@ -562,7 +555,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(-46, 77);
+            this.labelControl1.Location = new System.Drawing.Point(2, 76);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 18);
             this.labelControl1.TabIndex = 20;
@@ -576,7 +569,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(319, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(492, 365);
+            this.groupPanel2.Size = new System.Drawing.Size(492, 455);
             // 
             // 
             // 
@@ -626,40 +619,49 @@
             this.dgv_PhieuSuaChua_DanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_PhieuSuaChua_DanhSach.Location = new System.Drawing.Point(0, 0);
             this.dgv_PhieuSuaChua_DanhSach.Name = "dgv_PhieuSuaChua_DanhSach";
-            this.dgv_PhieuSuaChua_DanhSach.Size = new System.Drawing.Size(486, 343);
+            this.dgv_PhieuSuaChua_DanhSach.Size = new System.Drawing.Size(486, 433);
             this.dgv_PhieuSuaChua_DanhSach.TabIndex = 1;
             this.dgv_PhieuSuaChua_DanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PhieuSuaChua_DanhSach_CellClick_1);
             this.dgv_PhieuSuaChua_DanhSach.Click += new System.EventHandler(this.dgv_PhieuSuaChua_DanhSach_Click);
             // 
             // maPhieuSuaChuaDataGridViewTextBoxColumn
             // 
+            this.maPhieuSuaChuaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.maPhieuSuaChuaDataGridViewTextBoxColumn.DataPropertyName = "MaPhieuSuaChua";
             this.maPhieuSuaChuaDataGridViewTextBoxColumn.HeaderText = "Mã phiếu";
             this.maPhieuSuaChuaDataGridViewTextBoxColumn.Name = "maPhieuSuaChuaDataGridViewTextBoxColumn";
+            this.maPhieuSuaChuaDataGridViewTextBoxColumn.Width = 73;
             // 
             // maTiepNhanDataGridViewTextBoxColumn
             // 
+            this.maTiepNhanDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.maTiepNhanDataGridViewTextBoxColumn.DataPropertyName = "MaTiepNhan";
             this.maTiepNhanDataGridViewTextBoxColumn.HeaderText = "Mã tiếp nhận";
             this.maTiepNhanDataGridViewTextBoxColumn.Name = "maTiepNhanDataGridViewTextBoxColumn";
+            this.maTiepNhanDataGridViewTextBoxColumn.Width = 92;
             // 
             // bienSoDataGridViewTextBoxColumn
             // 
+            this.bienSoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.bienSoDataGridViewTextBoxColumn.DataPropertyName = "BienSo";
             this.bienSoDataGridViewTextBoxColumn.HeaderText = "Biển số";
             this.bienSoDataGridViewTextBoxColumn.Name = "bienSoDataGridViewTextBoxColumn";
+            this.bienSoDataGridViewTextBoxColumn.Width = 64;
             // 
             // ngaySuaChuaDataGridViewTextBoxColumn
             // 
+            this.ngaySuaChuaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ngaySuaChuaDataGridViewTextBoxColumn.DataPropertyName = "NgaySuaChua";
             this.ngaySuaChuaDataGridViewTextBoxColumn.HeaderText = "Ngày sửa";
             this.ngaySuaChuaDataGridViewTextBoxColumn.Name = "ngaySuaChuaDataGridViewTextBoxColumn";
             // 
             // tongTienDataGridViewTextBoxColumn
             // 
+            this.tongTienDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
             this.tongTienDataGridViewTextBoxColumn.HeaderText = "Tổng tiền";
             this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
+            this.tongTienDataGridViewTextBoxColumn.Width = 75;
             // 
             // quanlygaraoto1BindingSource
             // 
@@ -679,7 +681,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel3.Location = new System.Drawing.Point(817, 3);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(478, 365);
+            this.groupPanel3.Size = new System.Drawing.Size(478, 455);
             // 
             // 
             // 
@@ -730,7 +732,7 @@
             this.dgv_PhieuSuaChua_ChiTiet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_PhieuSuaChua_ChiTiet.Location = new System.Drawing.Point(0, 0);
             this.dgv_PhieuSuaChua_ChiTiet.Name = "dgv_PhieuSuaChua_ChiTiet";
-            this.dgv_PhieuSuaChua_ChiTiet.Size = new System.Drawing.Size(472, 343);
+            this.dgv_PhieuSuaChua_ChiTiet.Size = new System.Drawing.Size(472, 433);
             this.dgv_PhieuSuaChua_ChiTiet.TabIndex = 1;
             this.dgv_PhieuSuaChua_ChiTiet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PhieuSuaChua_ChiTiet_CellClick);
             this.dgv_PhieuSuaChua_ChiTiet.Click += new System.EventHandler(this.dgv_PhieuSuaChua_ChiTiet_Click);
@@ -799,7 +801,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 438);
+            this.ClientSize = new System.Drawing.Size(1302, 528);
             this.Name = "frmFixingReceipt";
             this.Text = "frmFixingReceipt";
             this.Load += new System.EventHandler(this.frmFixingReceipt_Load);
@@ -841,7 +843,6 @@
         private QUANLYGARAOTO quanlygaraoto1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
         private System.Windows.Forms.DataGridView dgv_PhieuSuaChua_ChiTiet;
-        private DevComponents.DotNetBar.Controls.TextBoxX txt_PhieuSuaChua_MaTiepNhan;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
@@ -863,11 +864,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_PhieuSuaChua_Them;
         private System.Windows.Forms.BindingSource PhieuSuaChua_bindingSource;
         private QUANLYGARAOTOTableAdapters.sp_PhieuSuaChua_GetByDayTableAdapter sp_PhieuSuaChua_GetByDayTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maPhieuSuaChuaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maTiepNhanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bienSoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySuaChuaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tongTienDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource quanlygaraoto1BindingSource;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_PhieuSuaChua_BienSo;
         private System.Windows.Forms.BindingSource CT_PhieuSuaChua_bindingSource;
@@ -879,5 +875,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhTienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cbox_PhieuSuaChua_MaTiepNhan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maPhieuSuaChuaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maTiepNhanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bienSoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySuaChuaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongTienDataGridViewTextBoxColumn;
     }
 }

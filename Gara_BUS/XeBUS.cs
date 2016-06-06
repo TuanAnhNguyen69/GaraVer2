@@ -62,5 +62,10 @@ namespace Gara_BUS
         {
             return db.Xe_GetAllBienSo();
         }
+
+        public static double Xe_GetTienNo(string BienSo)
+        {
+            return db.Xe_GetTienNo(BienSo);
+        }
     }
 }

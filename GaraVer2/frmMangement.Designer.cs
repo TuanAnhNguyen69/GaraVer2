@@ -327,7 +327,7 @@
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl2.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl2.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl2.Location = new System.Drawing.Point(17, 77);
+            this.labelControl2.Location = new System.Drawing.Point(8, 77);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(79, 18);
             this.labelControl2.TabIndex = 37;
@@ -340,7 +340,7 @@
             this.btn_Xe_XoaHieuXe.Appearance.Options.UseFont = true;
             this.btn_Xe_XoaHieuXe.Enabled = false;
             this.btn_Xe_XoaHieuXe.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xe_XoaHieuXe.Image")));
-            this.btn_Xe_XoaHieuXe.Location = new System.Drawing.Point(150, 205);
+            this.btn_Xe_XoaHieuXe.Location = new System.Drawing.Point(141, 205);
             this.btn_Xe_XoaHieuXe.Name = "btn_Xe_XoaHieuXe";
             this.btn_Xe_XoaHieuXe.Size = new System.Drawing.Size(99, 29);
             this.btn_Xe_XoaHieuXe.TabIndex = 36;
@@ -354,7 +354,7 @@
             this.btn_Xe_ThemHieuXe.Appearance.Options.UseFont = true;
             this.btn_Xe_ThemHieuXe.Enabled = false;
             this.btn_Xe_ThemHieuXe.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xe_ThemHieuXe.Image")));
-            this.btn_Xe_ThemHieuXe.Location = new System.Drawing.Point(17, 205);
+            this.btn_Xe_ThemHieuXe.Location = new System.Drawing.Point(8, 205);
             this.btn_Xe_ThemHieuXe.Name = "btn_Xe_ThemHieuXe";
             this.btn_Xe_ThemHieuXe.Size = new System.Drawing.Size(103, 29);
             this.btn_Xe_ThemHieuXe.TabIndex = 35;
@@ -365,7 +365,7 @@
             // 
             this.txt_Xe_TenHieuXe.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_Xe_TenHieuXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Xe_TenHieuXe.Location = new System.Drawing.Point(17, 124);
+            this.txt_Xe_TenHieuXe.Location = new System.Drawing.Point(8, 124);
             this.txt_Xe_TenHieuXe.Name = "txt_Xe_TenHieuXe";
             this.txt_Xe_TenHieuXe.Size = new System.Drawing.Size(232, 24);
             this.txt_Xe_TenHieuXe.TabIndex = 34;
@@ -423,7 +423,7 @@
             this.label_SoLuongXeToiDa.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.label_SoLuongXeToiDa.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.label_SoLuongXeToiDa.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.label_SoLuongXeToiDa.Location = new System.Drawing.Point(124, 3);
+            this.label_SoLuongXeToiDa.Location = new System.Drawing.Point(115, 3);
             this.label_SoLuongXeToiDa.Name = "label_SoLuongXeToiDa";
             this.label_SoLuongXeToiDa.Size = new System.Drawing.Size(88, 70);
             this.label_SoLuongXeToiDa.TabIndex = 38;
@@ -437,7 +437,7 @@
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl1.Location = new System.Drawing.Point(-45, 3);
+            this.labelControl1.Location = new System.Drawing.Point(-54, 3);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(141, 70);
             this.labelControl1.TabIndex = 37;
@@ -450,7 +450,7 @@
             this.btn_Xe_CapNhat.Appearance.Options.UseFont = true;
             this.btn_Xe_CapNhat.Enabled = false;
             this.btn_Xe_CapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xe_CapNhat.Image")));
-            this.btn_Xe_CapNhat.Location = new System.Drawing.Point(113, 95);
+            this.btn_Xe_CapNhat.Location = new System.Drawing.Point(104, 95);
             this.btn_Xe_CapNhat.Name = "btn_Xe_CapNhat";
             this.btn_Xe_CapNhat.Size = new System.Drawing.Size(99, 29);
             this.btn_Xe_CapNhat.TabIndex = 36;
@@ -461,7 +461,7 @@
             // 
             this.txt_Xe_SoLuongXe.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_Xe_SoLuongXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Xe_SoLuongXe.Location = new System.Drawing.Point(-44, 96);
+            this.txt_Xe_SoLuongXe.Location = new System.Drawing.Point(-53, 96);
             this.txt_Xe_SoLuongXe.Name = "txt_Xe_SoLuongXe";
             this.txt_Xe_SoLuongXe.Size = new System.Drawing.Size(140, 24);
             this.txt_Xe_SoLuongXe.TabIndex = 34;
@@ -666,7 +666,7 @@
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl5.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl5.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl5.Location = new System.Drawing.Point(320, 26);
+            this.labelControl5.Location = new System.Drawing.Point(311, 26);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(66, 18);
             this.labelControl5.TabIndex = 58;
@@ -676,7 +676,7 @@
             // 
             this.txt_VTPT_MaPhieu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_VTPT_MaPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_VTPT_MaPhieu.Location = new System.Drawing.Point(104, 23);
+            this.txt_VTPT_MaPhieu.Location = new System.Drawing.Point(95, 23);
             this.txt_VTPT_MaPhieu.Name = "txt_VTPT_MaPhieu";
             this.txt_VTPT_MaPhieu.Size = new System.Drawing.Size(195, 24);
             this.txt_VTPT_MaPhieu.TabIndex = 57;
@@ -686,7 +686,7 @@
             this.cbox_VTPT_MaVTPT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbox_VTPT_MaVTPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_VTPT_MaVTPT.FormattingEnabled = true;
-            this.cbox_VTPT_MaVTPT.Location = new System.Drawing.Point(417, 23);
+            this.cbox_VTPT_MaVTPT.Location = new System.Drawing.Point(408, 23);
             this.cbox_VTPT_MaVTPT.Name = "cbox_VTPT_MaVTPT";
             this.cbox_VTPT_MaVTPT.Size = new System.Drawing.Size(160, 26);
             this.cbox_VTPT_MaVTPT.TabIndex = 56;
@@ -699,7 +699,7 @@
             this.btn_VTPT_Xoa.Appearance.Options.UseFont = true;
             this.btn_VTPT_Xoa.Enabled = false;
             this.btn_VTPT_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_VTPT_Xoa.Image")));
-            this.btn_VTPT_Xoa.Location = new System.Drawing.Point(610, 155);
+            this.btn_VTPT_Xoa.Location = new System.Drawing.Point(601, 155);
             this.btn_VTPT_Xoa.Name = "btn_VTPT_Xoa";
             this.btn_VTPT_Xoa.Size = new System.Drawing.Size(114, 29);
             this.btn_VTPT_Xoa.TabIndex = 55;
@@ -714,7 +714,7 @@
             this.labelControl8.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl8.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl8.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl8.Location = new System.Drawing.Point(15, 26);
+            this.labelControl8.Location = new System.Drawing.Point(6, 26);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(64, 18);
             this.labelControl8.TabIndex = 54;
@@ -726,7 +726,7 @@
             this.txt_VTPT_ThanhTien.BackColor = System.Drawing.Color.Khaki;
             this.txt_VTPT_ThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_VTPT_ThanhTien.ForeColor = System.Drawing.Color.Red;
-            this.txt_VTPT_ThanhTien.Location = new System.Drawing.Point(417, 159);
+            this.txt_VTPT_ThanhTien.Location = new System.Drawing.Point(408, 159);
             this.txt_VTPT_ThanhTien.Name = "txt_VTPT_ThanhTien";
             this.txt_VTPT_ThanhTien.ReadOnly = true;
             this.txt_VTPT_ThanhTien.Size = new System.Drawing.Size(160, 24);
@@ -741,7 +741,7 @@
             this.labelControl6.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl6.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl6.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl6.Location = new System.Drawing.Point(320, 159);
+            this.labelControl6.Location = new System.Drawing.Point(311, 159);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(72, 18);
             this.labelControl6.TabIndex = 47;
@@ -753,7 +753,7 @@
             this.btn_VTPT_LamMoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_VTPT_LamMoi.Appearance.Options.UseFont = true;
             this.btn_VTPT_LamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_VTPT_LamMoi.Image")));
-            this.btn_VTPT_LamMoi.Location = new System.Drawing.Point(610, 65);
+            this.btn_VTPT_LamMoi.Location = new System.Drawing.Point(601, 65);
             this.btn_VTPT_LamMoi.Name = "btn_VTPT_LamMoi";
             this.btn_VTPT_LamMoi.Size = new System.Drawing.Size(114, 29);
             this.btn_VTPT_LamMoi.TabIndex = 45;
@@ -765,7 +765,7 @@
             this.date_VTPT_NgayNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.date_VTPT_NgayNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_VTPT_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_VTPT_NgayNhap.Location = new System.Drawing.Point(104, 157);
+            this.date_VTPT_NgayNhap.Location = new System.Drawing.Point(95, 157);
             this.date_VTPT_NgayNhap.Name = "date_VTPT_NgayNhap";
             this.date_VTPT_NgayNhap.Size = new System.Drawing.Size(195, 24);
             this.date_VTPT_NgayNhap.TabIndex = 44;
@@ -779,7 +779,7 @@
             this.labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl4.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl4.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl4.Location = new System.Drawing.Point(15, 162);
+            this.labelControl4.Location = new System.Drawing.Point(6, 162);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(74, 18);
             this.labelControl4.TabIndex = 43;
@@ -791,7 +791,7 @@
             this.btn_VTPT_ThemMoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_VTPT_ThemMoi.Appearance.Options.UseFont = true;
             this.btn_VTPT_ThemMoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_VTPT_ThemMoi.Image")));
-            this.btn_VTPT_ThemMoi.Location = new System.Drawing.Point(610, 111);
+            this.btn_VTPT_ThemMoi.Location = new System.Drawing.Point(601, 111);
             this.btn_VTPT_ThemMoi.Name = "btn_VTPT_ThemMoi";
             this.btn_VTPT_ThemMoi.Size = new System.Drawing.Size(114, 29);
             this.btn_VTPT_ThemMoi.TabIndex = 42;
@@ -802,7 +802,7 @@
             // 
             this.txt_VTPT_SoLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_VTPT_SoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_VTPT_SoLuong.Location = new System.Drawing.Point(104, 119);
+            this.txt_VTPT_SoLuong.Location = new System.Drawing.Point(95, 119);
             this.txt_VTPT_SoLuong.Name = "txt_VTPT_SoLuong";
             this.txt_VTPT_SoLuong.Size = new System.Drawing.Size(195, 24);
             this.txt_VTPT_SoLuong.TabIndex = 41;
@@ -813,7 +813,7 @@
             // 
             this.txt_VTPT_DonGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_VTPT_DonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_VTPT_DonGia.Location = new System.Drawing.Point(419, 119);
+            this.txt_VTPT_DonGia.Location = new System.Drawing.Point(410, 119);
             this.txt_VTPT_DonGia.Name = "txt_VTPT_DonGia";
             this.txt_VTPT_DonGia.Size = new System.Drawing.Size(158, 24);
             this.txt_VTPT_DonGia.TabIndex = 40;
@@ -824,7 +824,7 @@
             // 
             this.txt_VTPT_TenVTPT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_VTPT_TenVTPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_VTPT_TenVTPT.Location = new System.Drawing.Point(104, 73);
+            this.txt_VTPT_TenVTPT.Location = new System.Drawing.Point(95, 73);
             this.txt_VTPT_TenVTPT.Name = "txt_VTPT_TenVTPT";
             this.txt_VTPT_TenVTPT.Size = new System.Drawing.Size(473, 24);
             this.txt_VTPT_TenVTPT.TabIndex = 39;
@@ -838,7 +838,7 @@
             this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl3.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl3.Location = new System.Drawing.Point(322, 122);
+            this.labelControl3.Location = new System.Drawing.Point(313, 122);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(55, 18);
             this.labelControl3.TabIndex = 37;
@@ -853,7 +853,7 @@
             this.labelControl7.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl7.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl7.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl7.Location = new System.Drawing.Point(15, 122);
+            this.labelControl7.Location = new System.Drawing.Point(6, 122);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(63, 18);
             this.labelControl7.TabIndex = 36;
@@ -868,7 +868,7 @@
             this.labelControl9.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl9.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl9.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl9.Location = new System.Drawing.Point(15, 76);
+            this.labelControl9.Location = new System.Drawing.Point(6, 76);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(70, 18);
             this.labelControl9.TabIndex = 35;
@@ -949,7 +949,7 @@
             // 
             this.btn_TienCong_ThemMoi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_TienCong_ThemMoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_TienCong_ThemMoi.Image")));
-            this.btn_TienCong_ThemMoi.Location = new System.Drawing.Point(65, 271);
+            this.btn_TienCong_ThemMoi.Location = new System.Drawing.Point(56, 271);
             this.btn_TienCong_ThemMoi.Name = "btn_TienCong_ThemMoi";
             this.btn_TienCong_ThemMoi.Size = new System.Drawing.Size(91, 30);
             this.btn_TienCong_ThemMoi.TabIndex = 42;
@@ -961,7 +961,7 @@
             this.btn_TienCong_Xoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_TienCong_Xoa.Enabled = false;
             this.btn_TienCong_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_TienCong_Xoa.Image")));
-            this.btn_TienCong_Xoa.Location = new System.Drawing.Point(184, 317);
+            this.btn_TienCong_Xoa.Location = new System.Drawing.Point(175, 317);
             this.btn_TienCong_Xoa.Name = "btn_TienCong_Xoa";
             this.btn_TienCong_Xoa.Size = new System.Drawing.Size(91, 30);
             this.btn_TienCong_Xoa.TabIndex = 41;
@@ -972,7 +972,7 @@
             // 
             this.btn_TienCong_CapNhat.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_TienCong_CapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btn_TienCong_CapNhat.Image")));
-            this.btn_TienCong_CapNhat.Location = new System.Drawing.Point(184, 271);
+            this.btn_TienCong_CapNhat.Location = new System.Drawing.Point(175, 271);
             this.btn_TienCong_CapNhat.Name = "btn_TienCong_CapNhat";
             this.btn_TienCong_CapNhat.Size = new System.Drawing.Size(91, 30);
             this.btn_TienCong_CapNhat.TabIndex = 40;
@@ -983,7 +983,7 @@
             // 
             this.btn_TienCong_LamMoi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_TienCong_LamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_TienCong_LamMoi.Image")));
-            this.btn_TienCong_LamMoi.Location = new System.Drawing.Point(65, 317);
+            this.btn_TienCong_LamMoi.Location = new System.Drawing.Point(56, 317);
             this.btn_TienCong_LamMoi.Name = "btn_TienCong_LamMoi";
             this.btn_TienCong_LamMoi.Size = new System.Drawing.Size(91, 30);
             this.btn_TienCong_LamMoi.TabIndex = 39;
@@ -994,7 +994,7 @@
             // 
             this.txt_TienCong_DonGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_TienCong_DonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TienCong_DonGia.Location = new System.Drawing.Point(116, 215);
+            this.txt_TienCong_DonGia.Location = new System.Drawing.Point(107, 215);
             this.txt_TienCong_DonGia.Name = "txt_TienCong_DonGia";
             this.txt_TienCong_DonGia.Size = new System.Drawing.Size(159, 24);
             this.txt_TienCong_DonGia.TabIndex = 38;
@@ -1003,7 +1003,7 @@
             // 
             this.txt_TienCong_NoiDung.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_TienCong_NoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TienCong_NoiDung.Location = new System.Drawing.Point(116, 167);
+            this.txt_TienCong_NoiDung.Location = new System.Drawing.Point(107, 167);
             this.txt_TienCong_NoiDung.Name = "txt_TienCong_NoiDung";
             this.txt_TienCong_NoiDung.Size = new System.Drawing.Size(159, 24);
             this.txt_TienCong_NoiDung.TabIndex = 37;
@@ -1017,7 +1017,7 @@
             this.labelControl10.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl10.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl10.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl10.Location = new System.Drawing.Point(21, 218);
+            this.labelControl10.Location = new System.Drawing.Point(12, 218);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(69, 18);
             this.labelControl10.TabIndex = 36;
@@ -1032,7 +1032,7 @@
             this.labelControl11.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
             this.labelControl11.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Vertical;
             this.labelControl11.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.labelControl11.Location = new System.Drawing.Point(21, 167);
+            this.labelControl11.Location = new System.Drawing.Point(12, 167);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(63, 18);
             this.labelControl11.TabIndex = 35;

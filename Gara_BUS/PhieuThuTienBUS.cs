@@ -16,5 +16,22 @@ namespace Gara_BUS
         {
             db.PhieuThuTien_Insert(Data);
         }
+        public static void PhieuThuTien_DeleteByMaTiepNhan(string MaTiepNhan)
+        {
+            db.PhieuThuTien_DeleteByMaTiepNhan(MaTiepNhan);
+        }
+        public static void PhieuThuTien_DeleteByMaPhieuThu(string MaPhieuThu)
+        {
+            db.PhieuThuTien_DeleteByMaPhieuThu(MaPhieuThu);
+        }
+        public static DataTable PhieuThuTien_GetByDay(string NgayThuTien)
+        {
+            return db.PhieuThuTien_GetByDay(NgayThuTien);
+        }
+
+        public static DataTable PhieuThuTien_GetAll()
+        {
+            return db.PhieuThuTien_GetAll();
+        }
     }
 }

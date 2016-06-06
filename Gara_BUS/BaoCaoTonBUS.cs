@@ -16,9 +16,9 @@ namespace Gara_BUS
         {
             return db.BaoCaoTon_GetAll(Thang, Nam);
         }
-        public static void BaoCaoTon_Insert(BaoCaoTon Data)
+        public static void BaoCaoTon_Insert(BaoCaoTon Data,string Ngay)
         {
-            db.BaoCaoTon_Insert(Data);
+            db.BaoCaoTon_Insert(Data,Ngay);
         }
         public static void BaoCaoTon_Update(BaoCaoTon Data)
         {

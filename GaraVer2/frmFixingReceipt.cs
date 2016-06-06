@@ -17,7 +17,6 @@ namespace GaraVer2
     public partial class frmFixingReceipt : Abstract
     {
         double TienCong_DonGia;
-        double VatTu_DonGia;
         string Selected_MaSuaChua;
         int CurrentSTT;
         public frmFixingReceipt()
@@ -39,11 +38,16 @@ namespace GaraVer2
             cbox_PhieuSuaChua_NoiDung.DataSource = TienCongBUS.TienCong_GetAll();
             cbox_PhieuSuaChua_NoiDung.DisplayMember = "NoiDungSuaChua";
             cbox_PhieuSuaChua_NoiDung.ValueMember = "NoiDung";
+
+            cbox_PhieuSuaChua_MaTiepNhan.DataSource = TiepNhanBUS.TiepNhan_GetAll();
+            cbox_PhieuSuaChua_MaTiepNhan.DisplayMember = "MaTiepNhan";
+            cbox_PhieuSuaChua_MaTiepNhan.ValueMember = "MaTiepNhan";
+
             label_PhieuSuaChua_SoLuongTon.Text = "";
             txt_PhieuSuaChua_SoLuong.Text = "";
             cbox_PhieuSuaChua_NoiDung.Text = "";
             cbox_PhieuSuaChua_TenVatTu.Text="";
-            //label_PhieuSuaChua_SoLuongTon.Text = "0";
+            label_PhieuSuaChua_SoLuongTon.Text = "0";
 
         }
 
@@ -56,7 +60,7 @@ namespace GaraVer2
                 txt_PhieuSuaChua_MaPhieu.Focus();
                 return false;
             }
-            if (txt_PhieuSuaChua_MaTiepNhan.Text == "")
+            if (cbox_PhieuSuaChua_MaTiepNhan.Text == "")
             {
                 MessageBox.Show("Không để trống Mã Tiếp nhận");
                 txt_PhieuSuaChua_MaPhieu.Focus();
@@ -141,48 +145,72 @@ namespace GaraVer2
             return kt;
         }
 
-        //private void DoanhSo_Insert()
-        //{
-        //    DateTime z = new DateTime();
-        //    z = Convert.ToDateTime(date_PhieuSuaChua_NgaySuaChua.Text);
-        //    int year = z.Year;
-        //    int month = z.Month;
-        //    string s = string.Format("DS{0}-{1}", year, month);
-        //    double SumAll = 0;
-        //    DataTable dt = BaoCaoDoanhSoBUS.BaoCaoDoanhSo_GetDuLieu(month, year);
-        //    foreach (DataRow r in dt.Rows)
-        //    {
-        //        SumAll += double.Parse(r["TongTien"].ToString());
-        //        //SumAll += double.Parse(r["ThanhTien"].ToString());
-        //        //MessageBox.Show(r["TongTien"].ToString());
-        //    }
-        //    BaoCaoDoanhSoBUS.BaoCaoDoanhSo_Insert(month, year, SumAll);
-        //    foreach (DataRow r in dt.Rows)
-        //    {
-        //        float f = ((float.Parse(r["TongTien"].ToString())) * 100 / ((float)SumAll));
-        //        string hx = r["HieuXe"].ToString();
-        //        int count = int.Parse(r["SoLuotSua"].ToString());
-        //        double tt = double.Parse(r["ThanhTien"].ToString());
-                
-        //        //kiem tra
-        //        //int kt = BaoCaoDoanhSoBUS.BaoCaoDoanhSo_Kiemtra(s, r["HieuXe"].ToString());
-        //        //if (kt == 0)
-        //        {
-        //            CT_BaoCaoDoanhSoBUS.CT_BaoCaoDoanhSo_Insert(month, year, hx, count, tt, f);
-        //        }
-        //        //else
-        //        //{
-        //        //    CT_BaoCaoDoanhSoBUS.CT_BaoCaoDoanhSo_Update(s, hx, count, tt, f);
-        //        //}
-        //    }
+        private void DoanhSo_Insert()
+        {
+            DateTime NgaySua = new DateTime();
+            NgaySua = Convert.ToDateTime(date_PhieuSuaChua_NgaySuaChua.Text);
+            int year = NgaySua.Year;
+            int month = NgaySua.Month;
+            double SumAll = 0;
+            DataTable dt = BaoCaoDoanhSoBUS.BaoCaoDoanhSo_GetDuLieu(month, year);
+            foreach (DataRow r in dt.Rows)
+            {
+                SumAll += double.Parse(r["TongTien"].ToString());
+            }
+            BaoCaoDoanhSoBUS.BaoCaoDoanhSo_Insert(month, year, SumAll);
+        }
+        private void CT_DoanhSo_Insert()
+        {
+            DateTime NgaySua = new DateTime();
+            NgaySua = Convert.ToDateTime(date_PhieuSuaChua_NgaySuaChua.Text);
+            int year = NgaySua.Year;
+            int month = NgaySua.Month;
+            double SumAll = 0;
+            DataTable dt = BaoCaoDoanhSoBUS.BaoCaoDoanhSo_GetDuLieu(month, year);
+            foreach (DataRow r in dt.Rows)
+            {
+                SumAll += double.Parse(r["TongTien"].ToString());
+            }
+            foreach (DataRow r in dt.Rows)
+            {
+                float TiLe = ((float.Parse(r["TongTien"].ToString())) * 100 / ((float)SumAll));
+                string HieuXe = r["HieuXe"].ToString();
+                int SoLuotSua = int.Parse(r["SoLuotSua"].ToString());
+                double TongTien = double.Parse(r["TongTien"].ToString());
+                CT_BaoCaoDoanhSoBUS.CT_BaoCaoDoanhSo_Insert(month, year, HieuXe, SoLuotSua, TongTien, TiLe);
+            }
 
 
-        //}
-        //public void LoadSoxe(TextBox t1)
-        //{
-        //    t1.Text = cbox_PhieuSuaChua_BienSo.Text;
+        }
 
-        //}
+        private void CT_DoanhSo_Update()
+        {
+            DateTime NgaySua = new DateTime();
+            NgaySua = Convert.ToDateTime(date_PhieuSuaChua_NgaySuaChua.Text);
+            int year = NgaySua.Year;
+            int month = NgaySua.Month;
+            double SumAll = 0;
+            DataTable dt = BaoCaoDoanhSoBUS.BaoCaoDoanhSo_GetDuLieu(month, year);
+            foreach (DataRow r in dt.Rows)
+            {
+                SumAll += double.Parse(r["TongTien"].ToString());
+            }
+            foreach (DataRow r in dt.Rows)
+            {
+                float TiLe = ((float.Parse(r["TongTien"].ToString())) * 100 / ((float)SumAll));
+                string HieuXe = r["HieuXe"].ToString();
+                int SoLuotSua = int.Parse(r["SoLuotSua"].ToString());
+                double TongTien = double.Parse(r["TongTien"].ToString());
+                CT_BaoCaoDoanhSoBUS.CT_BaoCaoDoanhSo_Update(month, year, HieuXe, SoLuotSua, TongTien, TiLe);
+            }
+
+
+        }
+        public void LoadSoxe(TextBox t1)
+        {
+            t1.Text = txt_PhieuSuaChua_BienSo.Text;
+
+        }
 
         private void btnLapPhieu_Click(object sender, EventArgs e)
         {
@@ -194,13 +222,14 @@ namespace GaraVer2
                             if (KTNhapXuatPhieu())
                             {
                                 PhieuSuaChua psc = new PhieuSuaChua();
-                                psc.MaTiepNhan = txt_PhieuSuaChua_MaTiepNhan.Text;
+                                psc.MaTiepNhan = cbox_PhieuSuaChua_MaTiepNhan.Text;
                                 psc.MaPhieuSuaChua = txt_PhieuSuaChua_MaPhieu.Text;
                                 psc.NgaySuaChua = date_PhieuSuaChua_NgaySuaChua.Text;
                                 psc.BienSo = txt_PhieuSuaChua_BienSo.Text;
                                 PhieuSuaChuaBUS.PhieuSuaChua_Insert(psc);
                                 MessageBox.Show("Lập phiếu thành công!");
                                 dgv_PhieuSuaChua_DanhSach.DataSource = PhieuSuaChuaBUS.PhieuSuaChua_GetByDay(date_PhieuSuaChua_NgaySuaChua.Text);
+                                DoanhSo_Insert();
                             }
 
                     else
@@ -236,6 +265,8 @@ namespace GaraVer2
                     dgv_PhieuSuaChua_ChiTiet.DataSource = CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_GetByMaSuaChua(ct.MaPhieuSuaChua);
                     dgv_PhieuSuaChua_DanhSach.DataSource = PhieuSuaChuaBUS.PhieuSuaChua_GetByDay(date_PhieuSuaChua_NgaySuaChua.Text);
                     label_PhieuSuaChua_SoLuongTon.Text = Convert.ToString(VatTuPhuTungBUS.VatTuPhuTung_GetSoLuongTon(cbox_PhieuSuaChua_TenVatTu.Text));
+                    CT_DoanhSo_Insert();
+                    DoanhSo_Insert();
                 }
             }
             catch (Exception ex)
@@ -261,7 +292,7 @@ namespace GaraVer2
 
         //private void btnIn_Click(object sender, EventArgs e)
         //{
-        //    frmReportPhieuSuaChua frm = new frmReportPhieuSuaChua(cbox_PhieuSuaChua_BienSo.Text);
+        //    frmReportPhieuSuaChua frm = new frmReportPhieuSuaChua(txt_PhieuSuaChua_BienSo.Text);
         //    frm.Show();
         //    btnIn.Enabled = false;
         //    btnXoa.Enabled = false;
@@ -288,34 +319,7 @@ namespace GaraVer2
             return kt;
         }
 
-        //private void btnXoa_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        int r = dgv_PhieuSuaChua_DanhSach.CurrentRow.Index;
-        //        string msc = dgv_PhieuSuaChua_DanhSach.Rows[r].Cells[0].Value.ToString();
-        //        string noidung = dgv_PhieuSuaChua_DanhSach.Rows[r].Cells[2].Value.ToString();
-        //        string mavt = dgv_PhieuSuaChua_DanhSach.Rows[r].Cells[1].Value.ToString();
-        //        CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_Delete(msc, noidung, mavt);
-        //        MessageBox.Show("Xóa thành công!", "Xóa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        txt_PhieuSuaChua_DonGia.Text = "";
-        //        txt_PhieuSuaChua_SoLuong.Text = "";
-        //        txt_PhieuSuaChua_ThanhTien.Text = "";
-        //        txt_PhieuSuaChua_TienCong.Text = "";
-        //        cbox_PhieuSuaChua_TenVatTu.Text = "";
-        //        cbox_PhieuSuaChua_NoiDung.Text = "";
-        //        label_PhieuSuaChua_SoLuongTon.Text = "";
-        //        txt_PhieuSuaChua_SoLuong.Text = "";
-        //        txt_PhieuSuaChua_MaPhieu.Text = "";
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //    btnXoa.Enabled = false;
-        //    btnIn.Enabled = false;
-        //}
-
+      
         private BindingManagerBase bmb;
 
         private void dgv_PhieuSuaChua_DanhSach_Click(object sender, EventArgs e)
@@ -323,17 +327,17 @@ namespace GaraVer2
             txt_PhieuSuaChua_MaPhieu.DataBindings.Clear();
             txt_PhieuSuaChua_MaPhieu.DataBindings.Add("text", dgv_PhieuSuaChua_DanhSach.DataSource, "MaPhieuSuaChua");
             Selected_MaSuaChua = txt_PhieuSuaChua_MaPhieu.Text;
-            txt_PhieuSuaChua_MaTiepNhan.DataBindings.Clear();
-            txt_PhieuSuaChua_MaTiepNhan.DataBindings.Add("text", dgv_PhieuSuaChua_DanhSach.DataSource, "MaTiepNhan");
+            cbox_PhieuSuaChua_MaTiepNhan.DataBindings.Clear();
+            cbox_PhieuSuaChua_MaTiepNhan.DataBindings.Add("text", dgv_PhieuSuaChua_DanhSach.DataSource, "MaTiepNhan");
             txt_PhieuSuaChua_BienSo.DataBindings.Clear();
             txt_PhieuSuaChua_BienSo.DataBindings.Add("text", dgv_PhieuSuaChua_DanhSach.DataSource, "BienSo");
             bmb = BindingContext["MaPhieuSuaChua"];
             dgv_PhieuSuaChua_ChiTiet.DataSource = CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_GetByMaSuaChua(Selected_MaSuaChua);
         }
 
-        private void txt_PhieuSuaChua_MaTiepNhan_TextChanged(object sender, EventArgs e)
+        private void cbox_PhieuSuaChua_MaTiepNhan_TextChanged(object sender, EventArgs e)
         {
-            txt_PhieuSuaChua_BienSo.Text = TiepNhanBUS.TiepNhan_GetBienSo(txt_PhieuSuaChua_MaTiepNhan.Text);
+            txt_PhieuSuaChua_BienSo.Text = TiepNhanBUS.TiepNhan_GetBienSo(cbox_PhieuSuaChua_MaTiepNhan.Text);
         }
 
         private void cbox_PhieuSuaChua_TenVatTu_TextChanged(object sender, EventArgs e)
@@ -380,6 +384,8 @@ namespace GaraVer2
                     CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_Update(ct);
                     dgv_PhieuSuaChua_ChiTiet.DataSource = CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_GetByMaSuaChua(ct.MaPhieuSuaChua);
                     dgv_PhieuSuaChua_DanhSach.DataSource = PhieuSuaChuaBUS.PhieuSuaChua_GetByDay(date_PhieuSuaChua_NgaySuaChua.Text);
+                    CT_DoanhSo_Update();
+                    DoanhSo_Insert();
                 }
             }
             catch (Exception ex)
@@ -400,7 +406,8 @@ namespace GaraVer2
             cbox_PhieuSuaChua_TenVatTu.DataBindings.Add("text", dgv_PhieuSuaChua_ChiTiet.DataSource, "TenVatTuPhuTung");
             txt_PhieuSuaChua_SoLuong.DataBindings.Clear();
             txt_PhieuSuaChua_SoLuong.DataBindings.Add("text", dgv_PhieuSuaChua_ChiTiet.DataSource, "SoLuong");
-            CurrentSTT = int.Parse(dgv_PhieuSuaChua_ChiTiet.CurrentRow.Cells[0].Value.ToString());
+            if(dgv_PhieuSuaChua_ChiTiet.Rows.Count>0)
+                CurrentSTT = int.Parse(dgv_PhieuSuaChua_ChiTiet.CurrentRow.Cells[0].Value.ToString());
         }
 
         private void btn_PhieuSuaChua_Xoa2_Click(object sender, EventArgs e)
@@ -409,7 +416,10 @@ namespace GaraVer2
             {
                 CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_Delete(Selected_MaSuaChua, CurrentSTT);
                 dgv_PhieuSuaChua_ChiTiet.DataSource = CT_PhieuSuaChuaBUS.CT_PhieuSuaChua_GetByMaSuaChua(Selected_MaSuaChua);
+                dgv_PhieuSuaChua_DanhSach.DataSource = PhieuSuaChuaBUS.PhieuSuaChua_GetByDay(date_PhieuSuaChua_NgaySuaChua.Text);
                 MessageBox.Show("Xóa thành công!", "Xóa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CT_DoanhSo_Update();
+                DoanhSo_Insert();
             }
             catch(Exception ex)
             {
@@ -436,7 +446,7 @@ namespace GaraVer2
         private void btn_PhieuSuaChua_LamMoi1_Click(object sender, EventArgs e)
         {
             txt_PhieuSuaChua_MaPhieu.Text = "";
-            txt_PhieuSuaChua_MaTiepNhan.Text = "";
+            cbox_PhieuSuaChua_MaTiepNhan.Text = "";
             txt_PhieuSuaChua_BienSo.Text = "";
             date_PhieuSuaChua_NgaySuaChua.Value = DateTime.Now;
             dgv_PhieuSuaChua_ChiTiet.DataSource = null;

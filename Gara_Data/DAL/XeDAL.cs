@@ -22,7 +22,6 @@ namespace Gara_Data.DAL
                 cmd.Parameters.Add(new SqlParameter("@DienThoai", Data.DienThoai));
                 cmd.Parameters.Add(new SqlParameter("@DiaChi", Data.DiaChi));
                 cmd.Parameters.Add(new SqlParameter("@Email", Data.Email));
-               // cmd.Parameters.Add(new SqlParameter("@TienNo", Data.TienNo));
                 cmd.ExecuteNonQuery();
                 connection.Close();
             }
@@ -151,6 +150,17 @@ namespace Gara_Data.DAL
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 int k = (int)cmd.ExecuteScalar();
+                return k;
+            }
+        }
+
+        public double Xe_GetTienNo(string BienSo)
+        {
+            using (var cmd = new SqlCommand("sp_Xe_GetTienNo",GetConnection()))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("BienSo", BienSo);
+                double k = Convert.ToDouble(cmd.ExecuteScalar());
                 return k;
             }
         }

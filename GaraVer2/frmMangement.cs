@@ -195,6 +195,7 @@ namespace GaraVer2
                     VatTuPhuTungBUS.VatTuPhuTung_Insert(vtpt);
                     PhieuNhapVatTuPhuTungBUS.PhieuNhapVatTuPhuTung_Insert(pnvt);
                     CT_PhieuNhapVatTuPhuTungBUS.CT_PhieuNhapVatTuPhuTung_Insert(ctpn);
+                    BaoCaoTon_Insert();
                     MessageBox.Show("Thêm mới phiếu nhập vật tư thành công!");
                     dgv_VTPT_DanhSach.DataSource = PhieuNhapVatTuPhuTungBUS.VatTuPhuTungTheoMaSoPhieu_GetAll();
                     cbox_VTPT_MaVTPT.DataSource = VatTuPhuTungBUS.VatTuPhuTung_GetAll();
@@ -310,6 +311,14 @@ namespace GaraVer2
            {
                btn_VTPT_Xoa.Enabled = true;
            }
+
+           private void BaoCaoTon_Insert()
+           {
+               BaoCaoTon BaoCao = new BaoCaoTon();
+               BaoCao.TenVatTuPhuTung = txt_VTPT_TenVTPT.Text;
+               BaoCao.PhatSinh = int.Parse(txt_VTPT_SoLuong.Text);
+               BaoCaoTonBUS.BaoCaoTon_Insert(BaoCao, date_VTPT_NgayNhap.Text);
+           }
         #endregion
 
         #region TienCong_EventHanding
@@ -332,6 +341,7 @@ namespace GaraVer2
                        dgv_TienCong_DanhSach.DataSource = TienCongBUS.TienCong_GetAll();
                        txt_TienCong_NoiDung.Clear();
                        txt_TienCong_DonGia.Clear();
+                       
                    }
                    catch (Exception ex)
                    {
@@ -449,6 +459,8 @@ namespace GaraVer2
                }
                return false;
            }
+
+          
         #endregion
 
     }
